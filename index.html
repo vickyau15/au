@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>澳洲外國人房產投資分析報告 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Nunito:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1A1A2E;--ink2:#2E3354;--ink3:#4A4E6B;--ink4:#7B7F99;
+  --teal:#0A9E8A;--teal-l:#E6F7F5;--teal-ll:#F0FBF9;
+  --amber:#D4820A;--amber-l:#FDF3E3;--amber-ll:#FFFBF5;
+  --rose:#C9394A;--rose-l:#FDEAEC;
+  --sky:#2D7DD2;--sky-l:#EBF3FB;
+  --sage:#4A8C6A;--sage-l:#EBF5EF;
+  --gray-50:#FAFAFA;--gray-100:#F4F4F6;--gray-200:#E8E8EE;
+  --gray-300:#D0D0DC;--gray-400:#A8A8BC;--gray-500:#7A7A8C;
+  --white:#FFFFFF;--radius:8px;--radius-lg:16px;--radius-xl:24px;
+  --sh:0 1px 4px rgba(26,26,46,.06),0 2px 8px rgba(26,26,46,.04);
+  --sh-md:0 4px 16px rgba(26,26,46,.08),0 2px 6px rgba(26,26,46,.05);
+  --sh-lg:0 8px 32px rgba(26,26,46,.10),0 4px 12px rgba(26,26,46,.06);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito',sans-serif;background:var(--white);color:var(--ink);line-height:1.75;font-size:17px;overflow-x:hidden}
+::-webkit-scrollbar{width:5px;height:5px}
+::-webkit-scrollbar-track{background:var(--gray-100)}
+::-webkit-scrollbar-thumb{background:var(--gray-300);border-radius:3px}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,#0B1B3D 0%,#1A2E5A 50%,#0D3352 100%);min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:80px 40px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 40% 30%,rgba(10,158,138,.18) 0%,transparent 55%),radial-gradient(ellipse at 70% 75%,rgba(212,130,10,.1) 0%,transparent 50%);pointer-events:none}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;border:1px solid rgba(10,158,138,.4);border-radius:30px;padding:8px 22px;font-size:14px;color:rgba(10,158,138,.9);letter-spacing:.1em;font-weight:500;margin-bottom:28px;animation:fadeIn .8s ease}
+.hero h1{font-family:'Lora',serif;font-size:clamp(36px,6vw,68px);font-weight:600;line-height:1.15;color:#fff;margin-bottom:18px;animation:fadeUp .8s .15s both}
+.hero h1 span{color:#5EEAD4;font-style:italic}
+.hero-sub{font-size:18px;color:rgba(255,255,255,.6);font-weight:300;max-width:520px;margin-bottom:48px;line-height:1.8;animation:fadeUp .8s .3s both}
+.hero-pills{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;animation:fadeUp .8s .45s both}
+.pill{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:30px;padding:9px 22px;font-size:15px;color:rgba(255,255,255,.75);font-weight:400}
+.pill strong{color:#5EEAD4;font-weight:600}
+.scroll-hint{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);font-size:11px;color:rgba(255,255,255,.35);letter-spacing:.12em;text-transform:uppercase;animation:bob 2.5s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(6px)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--gray-200);padding:0 40px;display:flex;align-items:center;gap:0;box-shadow:var(--sh);transition:all .3s}
+.nav-brand{font-family:'Lora',serif;font-size:17px;font-weight:600;color:var(--teal);margin-right:28px;white-space:nowrap;flex-shrink:0}
+.nav-links{display:flex;gap:0;overflow-x:auto;flex:1}
+.nav a{display:block;padding:16px 18px;font-size:15px;color:var(--gray-500);text-decoration:none;border-bottom:2px solid transparent;white-space:nowrap;transition:all .2s;font-weight:500}
+.nav a:hover,.nav a.active{color:var(--teal);border-bottom-color:var(--teal)}
+
+/* LAYOUT */
+.page{max-width:1260px;margin:0 auto;padding:72px 48px}
+.section{margin-bottom:80px;scroll-margin-top:64px}
+.section-header{display:flex;align-items:center;gap:14px;margin-bottom:32px;padding-bottom:18px;border-bottom:2px solid var(--gray-100)}
+.section-num{background:var(--teal);color:#fff;font-family:'DM Mono',monospace;font-size:13px;padding:4px 11px;border-radius:6px;flex-shrink:0;letter-spacing:.04em}
+.section-title{font-family:'Lora',serif;font-size:30px;font-weight:600;color:var(--ink)}
+.divider{border:none;border-top:2px solid var(--gray-100);margin:60px 0}
+
+/* CARDS */
+.card{background:var(--white);border:1.5px solid var(--gray-200);border-radius:var(--radius-lg);padding:26px;box-shadow:var(--sh)}
+.card-teal{border-left:4px solid var(--teal);background:var(--teal-ll)}
+.card-amber{border-left:4px solid var(--amber);background:var(--amber-ll)}
+.card-rose{border-left:4px solid var(--rose);background:var(--rose-l)}
+.card-sky{border-left:4px solid var(--sky);background:var(--sky-l)}
+.card-sage{border-left:4px solid var(--sage);background:var(--sage-l)}
+
+/* GRID */
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.g5{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+@media(max-width:1050px){.g5{grid-template-columns:1fr 1fr 1fr}.g4{grid-template-columns:1fr 1fr}}
+@media(max-width:680px){.g2,.g3,.g4,.g5{grid-template-columns:1fr}}
+
+/* STAT */
+.stat{background:var(--white);border:1.5px solid var(--gray-200);border-radius:var(--radius-lg);padding:20px;text-align:center;box-shadow:var(--sh)}
+.stat-label{font-size:14px;color:var(--gray-500);margin-bottom:10px;line-height:1.5;font-weight:500}
+.stat-val{font-family:'DM Mono',monospace;font-size:24px;font-weight:500;color:var(--teal)}
+.stat-sub{font-size:11px;color:var(--gray-400);margin-top:5px}
+
+/* TABLES */
+.tw{overflow-x:auto;border-radius:var(--radius-lg);border:1.5px solid var(--gray-200);box-shadow:var(--sh)}
+table{width:100%;border-collapse:collapse;font-size:15px;min-width:560px}
+th{background:var(--gray-50);color:var(--gray-500);font-weight:600;font-size:14px;padding:12px 16px;text-align:left;border-bottom:1.5px solid var(--gray-200);white-space:nowrap;letter-spacing:.03em}
+td{padding:14px 18px;border-bottom:1px solid var(--gray-100);color:var(--ink3);font-size:15px;vertical-align:middle}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:var(--gray-50)}
+.vt{color:var(--teal);font-family:'DM Mono',monospace;font-weight:600}
+.vg{color:var(--sage);font-family:'DM Mono',monospace;font-weight:600}
+.vr{color:var(--rose);font-family:'DM Mono',monospace;font-weight:600}
+.va{color:var(--amber);font-family:'DM Mono',monospace;font-weight:600}
+.vm{color:var(--gray-400);font-size:12px}
+.brow td{background:#FFFBF0!important}
+.brow td:first-child{border-left:3px solid var(--amber)}
+.bestrow td{background:#F0FBF9!important}
+.bestrow td:first-child{border-left:3px solid var(--teal)}
+
+/* BADGES */
+.badge{display:inline-block;font-size:11px;padding:3px 9px;border-radius:20px;font-weight:600;letter-spacing:.02em}
+.bt{background:var(--teal-l);color:var(--teal)}
+.bg{background:var(--sage-l);color:var(--sage)}
+.br{background:var(--rose-l);color:var(--rose)}
+.ba{background:var(--amber-l);color:var(--amber)}
+.bs{background:var(--sky-l);color:var(--sky)}
+.bn{background:var(--gray-100);color:var(--gray-500)}
+
+/* ZONE BADGES */
+.z-cbd{background:#FDEAEC;color:#C9394A;font-weight:700;font-size:11px;padding:3px 9px;border-radius:20px}
+.z-inner{background:#FDF3E3;color:#D4820A;font-weight:700;font-size:11px;padding:3px 9px;border-radius:20px}
+.z-mid{background:#EBF3FB;color:#2D7DD2;font-weight:700;font-size:11px;padding:3px 9px;border-radius:20px}
+.z-outer{background:#EBF5EF;color:#4A8C6A;font-weight:700;font-size:11px;padding:3px 9px;border-radius:20px}
+
+/* NOTE */
+.note{padding:16px 20px;border-radius:var(--radius);font-size:15px;line-height:1.8;margin-top:12px}
+.note-t{background:var(--teal-l);border:1px solid rgba(10,158,138,.2);color:var(--teal)}
+.note-a{background:var(--amber-l);border:1px solid rgba(212,130,10,.2);color:var(--amber)}
+.note-r{background:var(--rose-l);border:1px solid rgba(201,57,74,.2);color:var(--rose)}
+.note-s{background:var(--sky-l);border:1px solid rgba(45,125,210,.2);color:var(--sky)}
+
+/* POLICY */
+.pol{background:var(--white);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:12px;border-left:4px solid var(--gray-300);box-shadow:var(--sh)}
+.pol.t{border-left-color:var(--teal)}
+.pol.g{border-left-color:var(--sage)}
+.pol.r{border-left-color:var(--rose)}
+.pol.a{border-left-color:var(--amber)}
+.pol.s{border-left-color:var(--sky)}
+.pol-title{font-size:17px;font-weight:600;color:var(--ink);margin-bottom:7px}
+.pol-body{font-size:15px;color:var(--ink4);line-height:1.9}
+
+/* TABS */
+.tabs{display:flex;border-bottom:2px solid var(--gray-200);margin-bottom:22px;overflow-x:auto}
+.tabx{padding:14px 24px;background:transparent;border:none;border-bottom:2px solid transparent;color:var(--gray-500);font-size:16px;font-family:'Nunito',sans-serif;font-weight:600;cursor:pointer;transition:all .15s;margin-bottom:-2px;white-space:nowrap}
+.tabx.on{color:var(--teal);border-bottom-color:var(--teal)}
+.tabx:hover:not(.on){color:var(--ink3)}
+.tc{display:none}.tc.on{display:block}
+
+/* BREAKDOWN */
+.rslab{font-size:13px;font-weight:700;color:var(--gray-400);letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px}
+.bk{background:var(--gray-50);border:1px solid var(--gray-200);border-radius:var(--radius);overflow:hidden;margin-bottom:14px}
+.bkr{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;border-bottom:1px solid var(--gray-100);font-size:15px}
+.bkr:last-child{border-bottom:none}
+.bkr.tot{background:var(--gray-100);border-top:1.5px solid var(--gray-200);font-weight:600}
+.bkr.tot-t{background:var(--teal-ll);border-top:1.5px solid rgba(10,158,138,.2)}
+.bklabel{color:var(--ink4)}
+.bkval{font-family:'DM Mono',monospace;font-weight:600;font-size:15px;color:var(--ink)}
+
+/* MBOX */
+.mbox{background:var(--white);border:1.5px solid var(--gray-200);border-radius:var(--radius);padding:14px;text-align:center}
+.mbox.hi{border-color:rgba(10,158,138,.3);background:var(--teal-ll)}
+.mbox-label{font-size:13px;color:var(--gray-500);margin-bottom:6px;font-weight:600;letter-spacing:.03em}
+.mbox-val{font-family:'DM Mono',monospace;font-size:20px;font-weight:600;color:var(--teal)}
+.mbox-sub{font-size:11px;color:var(--gray-400);margin-top:3px}
+
+/* CITY CARDS */
+.ccg{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:16px}
+@media(max-width:1050px){.ccg{grid-template-columns:1fr 1fr 1fr}}
+@media(max-width:680px){.ccg{grid-template-columns:1fr 1fr}}
+.cc{background:var(--white);border:1.5px solid var(--gray-200);border-radius:var(--radius-lg);padding:16px;transition:all .2s;box-shadow:var(--sh)}
+.cc.sel{border-color:var(--teal);box-shadow:0 0 0 3px rgba(10,158,138,.1)}
+.cc.best{border-color:var(--amber);background:var(--amber-ll)}
+.cc-name{font-size:17px;font-weight:700;color:var(--ink);margin-bottom:2px}
+.cc-state{font-size:11px;color:var(--gray-400);margin-bottom:12px;font-weight:500}
+.cc-row{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--gray-100);font-size:14px}
+.cc-row:last-child{border-bottom:none}
+.cc-rl{color:var(--gray-500)}
+.cc-rv{font-family:'DM Mono',monospace;font-weight:600;font-size:14px}
+
+/* CALC INPUT */
+input[type=range]{width:100%;height:5px;background:var(--gray-200);border-radius:3px;outline:none;-webkit-appearance:none;cursor:pointer}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;border-radius:50%;background:var(--teal);cursor:pointer;box-shadow:0 2px 6px rgba(10,158,138,.3);border:3px solid #fff}
+.rdisplay{font-family:'DM Mono',monospace;font-size:28px;color:var(--teal);font-weight:600;margin-top:8px}
+.ilabel{display:block;font-size:13px;font-weight:700;color:var(--gray-500);letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px}
+.igroup{margin-bottom:20px}
+
+select{width:100%;background:var(--white);border:1.5px solid var(--gray-200);border-radius:var(--radius);color:var(--ink);padding:10px 14px;font-size:14px;font-family:'Nunito',sans-serif;outline:none;cursor:pointer;transition:border-color .15s;font-weight:500}
+select:focus{border-color:var(--teal)}
+
+.tg{display:flex;gap:7px;flex-wrap:wrap}
+.tb{padding:10px 20px;border:1.5px solid var(--gray-200);border-radius:24px;background:var(--white);color:var(--gray-500);font-size:15px;cursor:pointer;transition:all .15s;font-family:'Nunito',sans-serif;font-weight:600}
+.tb.on{background:var(--teal);border-color:var(--teal);color:#fff}
+.tb:hover:not(.on){border-color:var(--teal);color:var(--teal)}
+
+/* REC */
+.rec{background:var(--white);border-radius:var(--radius-xl);padding:28px;border:1.5px solid var(--gray-200);box-shadow:var(--sh-md);margin-bottom:14px}
+.rec.gold{border-color:rgba(212,130,10,.3);background:var(--amber-ll)}
+.rec.teal{border-color:rgba(10,158,138,.3);background:var(--teal-ll)}
+.rec-rank{font-size:12px;font-weight:700;color:var(--gray-400);letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px}
+.rec-title{font-family:'Lora',serif;font-size:26px;font-weight:600;color:var(--ink);margin-bottom:4px}
+.rec-sub{font-size:15px;color:var(--gray-500);margin-bottom:14px;font-weight:500}
+.rec-body{font-size:16px;color:var(--ink3);line-height:1.9}
+.rec-tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:14px}
+
+/* SRC */
+.src{display:inline-block;font-family:'DM Mono',monospace;font-size:12px;color:var(--gray-400);background:var(--gray-100);padding:2px 8px;border-radius:4px;margin:2px}
+
+/* DISC */
+.disc{background:var(--gray-50);border:1.5px solid var(--gray-200);border-radius:var(--radius-lg);padding:24px;font-size:14px;color:var(--gray-500);line-height:1.9;margin-top:60px}
+
+/* TERM */
+.term-name{font-weight:700;color:var(--teal);font-size:14px;margin-bottom:4px}
+.term-body{font-size:13px;color:var(--ink4);line-height:1.8}
+.formula{background:var(--gray-100);border-radius:var(--radius);padding:10px 14px;font-family:'DM Mono',monospace;font-size:12px;color:var(--teal);margin:8px 0;line-height:1.9}
+.tip-wrap{position:relative;display:inline-flex;align-items:center;gap:4px;vertical-align:middle}
+.tip-icon{display:inline-flex;align-items:center;justify-content:center;width:15px;height:15px;background:var(--gray-300);color:var(--gray-600);border-radius:50%;font-size:9px;font-weight:700;cursor:pointer;flex-shrink:0;transition:background .15s;font-family:'DM Mono',monospace;line-height:1;user-select:none}
+.tip-icon:hover,.tip-icon.open{background:var(--teal);color:#fff}
+.tip-pop{display:none;position:absolute;bottom:calc(100% + 10px);left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;padding:14px 16px;border-radius:10px;font-size:12px;line-height:1.8;width:300px;z-index:999;box-shadow:0 8px 24px rgba(0,0,0,.25);font-family:'Nunito',sans-serif;font-weight:400}
+.tip-pop::after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);border:6px solid transparent;border-top-color:var(--ink)}
+.tip-pop strong{color:#5EEAD4;font-weight:700}
+.tip-pop code{font-family:'DM Mono',monospace;font-size:11px;background:rgba(255,255,255,.12);padding:3px 7px;border-radius:4px;display:block;margin:5px 0}
+.tip-icon.open+.tip-pop{display:block}
+.expand-btn{background:none;border:none;color:var(--teal);font-size:12px;cursor:pointer;font-family:'Nunito',sans-serif;font-weight:700;padding:0;margin-top:8px}
+.expand-content{display:none;margin-top:10px;padding-top:10px;border-top:1px solid var(--gray-200)}
+.expand-content.open{display:block}
+
+/* ── MOBILE RESPONSIVE ── */
+@media(max-width:768px){
+  body{font-size:16px}
+  .hero{padding:100px 24px 60px;min-height:auto}
+  .hero h1{font-size:32px}
+  .hero-sub{font-size:14px}
+  .hero-pills{gap:8px}
+  .pill{font-size:12px;padding:6px 14px}
+  .nav{padding:0 16px}
+  .nav-brand{font-size:15px;margin-right:16px}
+  .nav a{padding:14px 12px;font-size:12px}
+  .page{padding:48px 20px}
+  .section{margin-bottom:56px}
+  .section-title{font-size:22px}
+@media(max-width:900px){
+  .integrated-inner{flex-direction:column !important}
+  .pm-left{flex:none !important;width:100% !important;border-right:none !important;border-bottom:1.5px solid var(--gray-200);padding:20px !important}
+  .calc-right{flex:none !important;width:100% !important;padding:20px !important}
+  .integrated-wrap{border-radius:var(--radius-lg)}
+  .metrics-grid{grid-template-columns:1fr !important}
+  .cost-grid{grid-template-columns:1fr !important}
+  .proj-grid{grid-template-columns:1fr 1fr 1fr !important}
+}
+  .pm-title{font-size:16px}
+  .pb-row{margin-bottom:8px}
+  .pb-price{font-size:13px;min-width:80px}
+  .apt-price{font-size:18px}
+  .metrics-grid{grid-template-columns:1fr !important}
+  .cost-grid{grid-template-columns:1fr !important;gap:0 !important}
+  .cost-grid > div:first-child{margin-bottom:14px}
+  .proj-grid{grid-template-columns:1fr !important}
+  .g2,.g3{grid-template-columns:1fr}
+  .g4{grid-template-columns:1fr 1fr}
+  .ccg{grid-template-columns:1fr 1fr}
+  .rec{padding:20px}
+  .rec-title{font-size:20px}
+  .bkr{padding:9px 12px;font-size:12px}
+  .bkval{font-size:12px}
+  .mbox-val{font-size:16px}
+  .stat-val{font-size:20px}
+  .disc{padding:18px}
+  .tip-pop{width:240px;font-size:11px;left:0;transform:none}
+  .tip-pop::after{left:20px;transform:none}
+}
+@media(max-width:480px){
+  .g4{grid-template-columns:1fr 1fr}
+  .ccg{grid-template-columns:1fr}
+  .hero-pills{flex-direction:column;align-items:center}
+  .city-tabs{gap:6px}
+  .ctab{padding:10px 14px;font-size:13px;min-height:44px}
+  .tb{min-height:44px;padding:10px 16px}
+  .pb-header{padding:14px 16px;min-height:52px}
+  .tabx{padding:14px 16px;min-height:44px}
+}
+.integrated-wrap{background:var(--white);border:1.5px solid var(--gray-200);border-radius:var(--radius-xl);box-shadow:var(--sh-lg)}
+.integrated-inner{display:flex;align-items:stretch}
+
+/* LEFT: price map */
+.pm-left{flex:0 0 360px;width:360px;background:var(--gray-50);border-right:1.5px solid var(--gray-200);padding:28px;box-sizing:border-box;border-radius:var(--radius-xl) 0 0 var(--radius-xl)}
+.pm-title{font-family:'Lora',serif;font-size:18px;font-weight:600;color:var(--ink);margin-bottom:4px}
+.pm-sub{font-size:14px;color:var(--gray-500);margin-bottom:20px;font-weight:500}
+
+/* City tabs for price map */
+.city-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px}
+.ctab{padding:9px 18px;border:1.5px solid var(--gray-200);border-radius:20px;background:var(--white);color:var(--gray-500);font-size:15px;cursor:pointer;font-family:'Nunito',sans-serif;font-weight:600;transition:all .15s}
+.ctab.on{background:var(--ink);border-color:var(--ink);color:#fff}
+
+/* Price band rows */
+.pb-row{border-radius:var(--radius);margin-bottom:10px;cursor:pointer;border:1.5px solid var(--gray-200);transition:all .2s;background:var(--white)}
+.pb-row:hover{border-color:var(--teal);box-shadow:var(--sh)}
+.pb-row.active{border-color:var(--teal);box-shadow:0 0 0 3px rgba(10,158,138,.12)}
+.pb-header{display:flex;align-items:center;gap:10px;padding:12px 16px;background:var(--white)}
+.pb-price{font-family:'DM Mono',monospace;font-size:16px;font-weight:700;color:var(--ink);min-width:90px}
+.pb-zone{flex-shrink:0}
+.pb-body{padding:10px 16px 14px;border-top:1px solid var(--gray-100);background:var(--gray-50)}
+.pb-suburb{font-size:15px;font-weight:700;color:var(--ink);margin-bottom:4px}
+.pb-detail{font-size:14px;color:var(--gray-500);line-height:1.7}
+
+/* NEW APT HIGHLIGHT */
+.apt-highlight{background:linear-gradient(135deg,var(--teal-ll),#fff);border:1.5px solid rgba(10,158,138,.25);border-radius:var(--radius);padding:10px 14px;margin-top:8px}
+.apt-label{font-size:10px;font-weight:800;color:var(--teal);letter-spacing:.12em;text-transform:uppercase;margin-bottom:5px}
+.apt-price{font-family:'DM Mono',monospace;font-size:22px;font-weight:700;color:var(--ink)}
+.apt-desc{font-size:14px;color:var(--gray-500);margin-top:3px}
+.apt-rent{font-size:15px;font-weight:700;color:var(--teal);margin-top:6px}
+
+/* RIGHT: calculator */
+.calc-right{flex:1 1 0;min-width:0;padding:28px;box-sizing:border-box}
+.calc-title{font-family:'Lora',serif;font-size:18px;font-weight:600;color:var(--ink);margin-bottom:4px}
+.calc-sub{font-size:14px;color:var(--gray-500);margin-bottom:20px;font-weight:500}
+
+/* PROJ CARD */
+.proj-card{background:var(--gray-50);border:1px solid var(--gray-200);border-radius:var(--radius);padding:12px;text-align:center}
+.proj-yr{font-size:11px;font-weight:700;color:var(--gray-400);letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-badge">2026年最新官方數據 · 外國個人投資者專屬</div>
+  <h1>澳洲房產投資<br><span>深度分析報告</span></h1>
+  <div class="hero-sub">針對以個人名義購買新建公寓的外國投資者<br>長期出租 + 資本增值 · 四大城市全面比較</div>
+  <div class="hero-pills">
+    <div class="pill"><strong>5</strong> 分析城市</div>
+    <div class="pill">土地稅附加 <strong>WA/SA = $0</strong></div>
+    <div class="pill">伯斯年增值 <strong>+21.5%</strong></div>
+    <div class="pill">FIRB費 <strong>$15,100</strong></div>
+  </div>
+  <div class="scroll-hint">▼ scroll</div>
+</div>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-brand">AU Property 2026</div>
+  <div class="nav-links">
+    <a href="#summary">摘要</a>
+    <a href="#policy">政策</a>
+    
+    <a href="#integrated">選房計算器</a>
+    <a href="#costs">入場成本</a>
+    <a href="#market">市場</a>
+    <a href="#loan">貸款</a>
+    <a href="#recommendation">建議</a><a href="#apt-data">公寓數據</a><a href="#pitfalls">常見風險</a>
+  </div>
+</nav>
+
+<div class="page">
+
+<!-- S1 SUMMARY -->
+<div class="section" id="summary">
+  <div class="section-header"><span class="section-num">01</span><div class="section-title">執行摘要</div></div>
+  <div class="card card-teal" style="margin-bottom:22px;font-size:14px;line-height:2;color:#0A6B5E">
+    本報告針對以<strong>個人名義</strong>購買澳洲新建住宅的外國投資者，提供全面的稅務成本、市場數據及投資回報分析。所有數據來自澳洲官方政府機構及主要市場研究機構（2026年最新）。<br>
+    <strong>核心結論：</strong>$100萬預算內，<strong>新建2房公寓</strong>是外國投資者最合適的物件類型。伯斯（WA）和阿德萊德（SA）均無外國人土地稅附加，是整體表現最佳的城市。
+  </div>
+  <div class="g4">
+    <div class="stat"><div class="stat-label">最低入場成本城市</div><div class="stat-val">Perth WA</div><div class="stat-sub">印花稅附加最低 7%</div></div>
+    <div class="stat"><div class="stat-label">最強年度增值</div><div class="stat-val">+21.5%</div><div class="stat-sub">Perth · PropTrack 2026.04</div></div>
+    <div class="stat"><div class="stat-label">土地稅附加</div><div class="stat-val">0%</div><div class="stat-sub">WA 和 SA · 無外國人附加稅<br><span style="font-size:10px;opacity:.7">仍可能有一般土地稅</span></div></div>
+    <div class="stat"><div class="stat-label">FIRB費（新建住宅）</div><div class="stat-val">$15,100</div><div class="stat-sub">$75k以下$4,500 · $100萬以下$15,100 · $100-200萬$30,300</div></div>
+  </div>
+  <div class="note note-r" style="margin-top:18px">⚠️ <strong>外國人購買限制 2025.04–2029.06：</strong>禁止購買二手住宅。只可購買新建住宅（New Dwellings）、期房（Off-the-Plan）及空地（Vacant Land）。</div>
+  <div class="note note-t" style="margin-top:10px">💡 <strong>為何選新建2房公寓：</strong>租金回報率最高、Strata統一管理（人不在澳洲也省心）、流動性最好、$100萬預算選擇最多、折舊抵扣最多。</div>
+</div>
+
+<div class="divider"></div>
+
+<!-- S2 POLICY -->
+<div class="section" id="policy">
+  <div class="section-header"><span class="section-num">02</span><div class="section-title">2026年重要政策</div></div>
+  <div class="pol r"><div class="pol-title">🚫 二手房禁購延長至2029年6月</div><div class="pol-body">聯邦政府將禁令再延長2年3個月。有限豁免適用於紐西蘭公民及顯著增加住房供給的大型開發商。一般個人被動投資者不符合豁免條件。</div></div>
+  <div class="pol g"><div class="pol-title">✅ 負扣稅保留（新建住宅完全豁免）</div><div class="pol-body">2027年7月1日起二手住宅負扣稅廢除，但<strong>新建住宅完整保留</strong>。外國人天然只能買新建住宅，自動享有豁免。租金收入低於持有成本的虧損可抵扣薪資所得。<strong>重要條件：</strong>投資者需有澳洲應稅收入（Australian taxable income）才能實際享有節稅效果。若無澳洲薪資或其他澳洲來源收入，虧損可累積留待未來使用，但當年無法立即抵稅。</div></div>
+  <div class="pol a"><div class="pol-title">⚠️ 資本利得稅（CGT）改革（尚待立法）</div><div class="pol-body">2027年7月1日起：廢除50%折扣，改以通膨調整加最低30%稅率。<strong>新建住宅可自選新制或舊制（50%折扣）</strong>，選對自己更有利的方式。預扣稅已升至15%，$75萬門檻已取消。</div></div>
+  <div class="pol s"><div class="pol-title">ℹ️ FIRB審批加速（低風險快速通道）</div><div class="pol-body">2026年5月19日起，新建住宅屬低風險類別，目標30天內完成審批。費用：新建住宅$1百萬以下為 <strong>$15,100</strong>（全澳統一）。</div></div>
+  <div class="pol a"><div class="pol-title">⚠️ 信託持有30%最低稅（2028年起）</div><div class="pol-body">透過自由裁量信託持有房產將適用30%最低稅率。本報告分析為<strong>個人名義直接持有</strong>，不受此規定影響。</div></div>
+</div>
+
+<!-- S3 INTEGRATED -->
+<div class="section" id="integrated">
+  <div class="section-header"><span class="section-num">03</span><div class="section-title">選房計算器 · 各城市價格區間 × 現金流分析</div></div>
+  <div class="note note-t" style="margin-bottom:18px">💡 <strong>使用方式：</strong>左側選擇城市和價格區間，右側即時顯示該物件的完整現金流明細和15年回報預測。所有新建2房公寓數據均來自2026年5月實際掛牌價。</div>
+
+  <div class="integrated-wrap">
+    <div class="integrated-inner">
+
+      <!-- LEFT: PRICE MAP -->
+      <div class="pm-left">
+        <div class="pm-title">📍 新建2房公寓 · 各地段價格</div>
+        <div class="pm-sub">點擊任一價格區間，右側即時計算現金流</div>
+
+        <!-- City selector -->
+        <div class="city-tabs" id="city-tabs">
+          <button class="ctab on" data-city="perth">伯斯 WA</button>
+          <button class="ctab" data-city="adelaide">阿德萊德 SA</button>
+          <button class="ctab" data-city="brisbane">布里斯本 QLD</button>
+          <button class="ctab" data-city="melbourne">墨爾本 VIC</button>
+        </div>
+
+        <!-- Price bands -->
+        <div id="price-bands"></div>
+
+        <!-- Zone legend -->
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;padding-top:14px;border-top:1px solid var(--gray-200)">
+          <span class="z-cbd">市中心 0–2km</span>
+          <span class="z-inner">內環 2–5km</span>
+          <span class="z-mid">中環 5–10km</span>
+          <span class="z-outer">外環 10km+</span>
+        </div>
+      </div>
+
+      <!-- RIGHT: CALCULATOR -->
+      <div class="calc-right">
+        <div class="calc-title">💰 現金流詳細計算</div>
+        <div class="calc-sub" id="calc-subtitle">請在左側選擇城市和價格區間</div>
+
+        <!-- Selected property highlight -->
+        <div id="selected-prop" class="apt-highlight" style="margin-bottom:18px;display:none">
+          <div class="apt-label">已選物件</div>
+          <div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap">
+            <div class="apt-price" id="sp-price">—</div>
+            <span id="sp-zone-badge"></span>
+          </div>
+          <div class="apt-desc" id="sp-desc">—</div>
+          <div class="apt-rent" id="sp-rent">—</div>
+        </div>
+
+        <!-- LVR toggle -->
+        <div class="igroup">
+          <label class="ilabel">貸款成數（LVR）</label>
+          <div class="tg" id="lvr-toggle">
+            <button class="tb on" data-lvr="70">70%（外國人常見上限）</button>
+            <button class="tb" data-lvr="60">60%（較保守）</button>
+          </div>
+        </div>
+
+        <!-- Key metrics -->
+        <div class="metrics-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:10px">
+          <div class="mbox hi">
+            <div class="mbox-label">
+              <span class="tip-wrap">毛租金回報率
+                <span class="tip-icon" onclick="toggleTip(this)">?</span>
+                <div class="tip-pop">
+                  <strong>毛租金回報率 Gross Yield</strong><br>
+                  <code>年租金收入 ÷ 購買金額 × 100%</code>
+                  未扣除任何費用，最粗略的指標。<br><br>
+                  <strong>為何比市場均值低？</strong><br>
+                  ① 新建公寓比二手貴 15–25%，但租金市場新舊無差異<br>
+                  ② CoreLogic均值（新舊混合）：伯斯5.5% · 阿德4.7% · 布里4.5% · 墨爾本4.8%<br>
+                  新建公寓預計比均值低 <strong>0.5–1%</strong>，本計算器屬正常範圍。
+                </div>
+              </span>
+            </div>
+            <div class="mbox-val" id="r-gy">—</div>
+            <div class="mbox-sub">Gross Yield</div>
+          </div>
+          <div class="mbox hi">
+            <div class="mbox-label">
+              <span class="tip-wrap">淨租金回報率
+                <span class="tip-icon" onclick="toggleTip(this)">?</span>
+                <div class="tip-pop">
+                  <strong>淨租金回報率 Net Yield</strong><br>
+                  <code>（年租金 − 管理費 − Strata − 維修 − 土地稅）÷ 購買金額</code>
+                  扣除持有費用（不含貸款利息），反映物業本身實際收益率。比毛回報更真實。<br><br>
+                  <strong>未包含：</strong>貸款利息、Water Rates、房東保險、會計費。含以上後現金流會更負。
+                </div>
+              </span>
+            </div>
+            <div class="mbox-val" id="r-ny">—</div>
+            <div class="mbox-sub">Net Yield</div>
+          </div>
+          <div class="mbox hi">
+            <div class="mbox-label">
+              <span class="tip-wrap">稅後月均缺口
+                <span class="tip-icon" onclick="toggleTip(this)">?</span>
+                <div class="tip-pop">
+                  <strong>稅後月均現金缺口</strong><br>
+                  <code>（年度現金流 + 負扣稅節省）÷ 12</code>
+                  負扣稅節省 = 虧損金額 × 32.5%（邊際稅率）<br><br>
+                  這是你每個月實際需要從口袋拿出的金額。只要你有足夠的薪資收入可申報負扣稅，稅後缺口會比稅前小很多。
+                </div>
+              </span>
+            </div>
+            <div class="mbox-val" id="r-monthly-gap" style="font-size:15px">—</div>
+            <div class="mbox-sub">32.5%邊際稅率</div>
+          </div>
+        </div>
+
+        <!-- Yield context note -->
+        <div style="background:#FFF8F0;border:1px solid rgba(212,130,10,.2);border-radius:8px;padding:12px 14px;margin-bottom:14px;font-size:12px;line-height:1.85;color:#7A5A20">
+          <div style="font-weight:700;color:#9A6A10;margin-bottom:6px">📊 為什麼回報率比市場報告低？</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+            <div>
+              <div style="font-weight:600;margin-bottom:3px;color:#7A5A20">① 新建公寓售價溢價</div>
+              新建公寓比同區二手公寓貴約 <strong>15–25%</strong>，但租金市場新舊幾乎無差異。相同的租金除以更高的買入價，回報率自然偏低。CoreLogic、Cotality等機構的數字是新舊混合計算，因此我們的回報率會比市場均值低 <strong>0.5–1%</strong>。
+            </div>
+            <div>
+              <div style="font-weight:600;margin-bottom:3px;color:#7A5A20">② 新建溢價是「品質成本」</div>
+              買新建公寓的代價是：更高售價 → 更低初期租金回報率。但換來的是：更高折舊抵扣（每年$8,000–$15,000節稅）、更低維修風險、更容易出租、負扣稅資格保留。<strong>稅後實際回報通常優於數字顯示。</strong>
+            </div>
+          </div>
+          <div style="margin-top:8px;padding-top:8px;border-top:1px solid rgba(212,130,10,.15)">
+            <span style="font-weight:600">市場參考（CoreLogic 2024 · 全市新舊公寓均值）：</span>
+            伯斯 5.5% · 阿德萊德 4.7% · 布里斯本 4.5% · 墨爾本 4.8% · 雪梨 4.0%
+            <span style="color:#9A6A10;margin-left:6px">→ 新建公寓預計比此低 0.5–1%，符合本計算器結果</span>
+          </div>
+        </div>
+
+        <div class="cost-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+          <!-- Cost breakdown -->
+          <div>
+            <div class="rslab">年度費用明細（第1年）</div>
+            <div class="bk" id="cost-bk">
+              <div class="bkr"><span class="bklabel">年租金收入（空置調整）</span><span class="bkval vg" id="r-rent">—</span></div>
+              <div class="bkr"><span class="bklabel">貸款利息</span><span class="bkval vr" id="r-interest">—</span></div>
+              <div class="bkr"><span class="bklabel">物業管理費（8%）</span><span class="bkval vr" id="r-mgmt">—</span></div>
+              <div class="bkr"><span class="bklabel">Strata費（Mid-rise新建）</span><span class="bkval vr" id="r-strata">—</span></div>
+              <div class="bkr"><span class="bklabel">維修費（房價0.5%）</span><span class="bkval vr" id="r-maint">—</span></div>
+              <div class="bkr"><span class="bklabel">土地稅附加</span><span class="bkval" id="r-lt">—</span></div>
+              <div class="bkr tot"><span class="bklabel">年度現金流（稅前）</span><span class="bkval" style="font-size:15px" id="r-cf">—</span></div>
+            </div>
+            <div id="neg-note" class="note note-t" style="display:none;font-size:12px">
+              💡 <strong>負扣稅節省：</strong>虧損 <span id="r-neg"></span> 可抵扣薪資所得。邊際稅率32.5%每年節省約 <strong id="r-ts"></strong>。
+            </div>
+          </div>
+
+          <!-- Entry + 15yr -->
+          <div>
+            <div class="rslab">一次性入場成本</div>
+            <div class="bk">
+              <div class="bkr"><span class="bklabel">基本印花稅</span><span class="bkval" id="r-sd">—</span></div>
+              <div class="bkr"><span class="bklabel">外國人印花稅附加</span><span class="bkval vr" id="r-sur">—</span></div>
+              <div class="bkr"><span class="bklabel">FIRB費</span><span class="bkval" id="r-firb">$15,100</span></div>
+              <div class="bkr tot-t"><span class="bklabel">總入場成本</span><span class="bkval vt" style="font-size:15px" id="r-entry">—</span></div>
+            </div>
+            <div class="rslab" style="margin-top:14px">15年保守預測</div>
+            <div class="proj-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px">
+              <div class="proj-card"><div class="proj-yr">第5年</div><div class="bkval" id="p5-cf" style="font-size:13px;display:block;text-align:center">—</div><div style="font-size:10px;color:var(--gray-400);margin-top:2px;text-align:center">年現金流</div><div class="bkval vg" id="p5-gain" style="font-size:13px;display:block;text-align:center;margin-top:4px">—</div><div style="font-size:10px;color:var(--gray-400);text-align:center">資本增值</div></div>
+              <div class="proj-card"><div class="proj-yr">第10年</div><div class="bkval" id="p10-cf" style="font-size:13px;display:block;text-align:center">—</div><div style="font-size:10px;color:var(--gray-400);margin-top:2px;text-align:center">年現金流</div><div class="bkval vg" id="p10-gain" style="font-size:13px;display:block;text-align:center;margin-top:4px">—</div><div style="font-size:10px;color:var(--gray-400);text-align:center">資本增值</div></div>
+              <div class="proj-card" style="border-color:rgba(10,158,138,.3);background:var(--teal-ll)"><div class="proj-yr">第15年</div><div class="bkval" id="p15-cf" style="font-size:13px;display:block;text-align:center">—</div><div style="font-size:10px;color:var(--gray-400);margin-top:2px;text-align:center">年現金流</div><div class="bkval vg" id="p15-gain" style="font-size:13px;display:block;text-align:center;margin-top:4px">—</div><div style="font-size:10px;color:var(--gray-400);text-align:center">資本增值</div></div>
+            </div>
+            <div id="bev-note" class="note note-t" style="margin-top:10px;font-size:12px;display:none"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="note note-a" style="margin-top:14px;font-size:12px">⚠️ 保守模型：房價第1-3年+7%（伯斯/阿德/布里）/+5%（墨爾本）→ 第4-7年+5%/+4% → 第8-15年+3%。租金第1-3年+5% → 第4-7年+3% → 第8-15年+2.5%，上限$850/週。不含折舊抵扣（新建每年約$8,000–$15,000）。</div>
+</div>
+
+<div class="divider"></div>
+
+<!-- S5 COSTS -->
+<div class="section" id="costs">
+  <div class="section-header"><span class="section-num">04</span><div class="section-title">五城市入場成本比較</div></div>
+  <div class="tw">
+    <table id="stamp-table">
+      <thead><tr><th>城市</th><th>基本印花稅</th><th>外國人附加率</th><th>外國人附加額</th><th>FIRB費</th><th>總入場成本</th><th>土地稅附加</th><th>備註</th></tr></thead>
+      <tbody id="stamp-tbody"></tbody>
+    </table>
+  </div>
+  <div style="margin-top:10px"><span class="src">revenue.wa.gov.au</span><span class="src">qro.qld.gov.au</span><span class="src">sro.vic.gov.au</span><span class="src">revenuesa.sa.gov.au</span><span class="src">revenue.nsw.gov.au</span><span class="src">foreigninvestment.gov.au</span></div>
+</div>
+
+<div class="divider"></div>
+
+<!-- S6 MARKET -->
+<div class="section" id="market">
+  <div class="section-header"><span class="section-num">05</span><div class="section-title">市場數據</div></div>
+  <div class="tabs">
+    <button class="tabx on" onclick="tab('rental',this)">租金數據</button>
+    <button class="tabx" onclick="tab('growth',this)">增值數據</button>
+    <button class="tabx" onclick="tab('investor',this)">投資者表現</button>
+    <button class="tabx" onclick="tab('strata',this)">Strata費用</button>
+  </div>
+  <div id="t-rental" class="tc on">
+    <div class="note note-s" style="margin-bottom:14px;font-size:12px">📌 雪梨絕對租金最高，但房價也最高導致回報率最低。伯斯回報率最高，因為相對房價而言租金更划算。以下為SQM Research城市均值，新建公寓實際租金因地段不同而差異顯著（詳見選房計算器）。</div>
+    <div class="tw"><table>
+      <thead><tr><th>城市</th><th>3房獨立屋週租金</th><th>2房公寓週租金</th><th>House年成長</th><th>Unit年成長</th><th>空置率</th><th>出租天數</th></tr></thead>
+      <tbody>
+        <tr><td>雪梨 <span class="badge bs">絕對最高</span></td><td class="vt">$1,085</td><td class="vt">$774</td><td class="vg">+2.6%</td><td class="vg">+4.2%</td><td>1.8%</td><td>20天</td></tr>
+        <tr class="bestrow"><td>伯斯 <span class="badge ba">回報率最高</span></td><td class="vt">$826</td><td class="vt">$707</td><td class="vg">+7.2%</td><td class="vg">+6.9%</td><td>1.2%</td><td>18天</td></tr>
+        <tr><td>墨爾本</td><td class="vt">$766</td><td class="vt">$619</td><td class="va">0%</td><td class="vg">+4.3%</td><td>1.4%</td><td>25天+</td></tr>
+        <tr><td>布里斯本</td><td class="vt">$727</td><td class="vt">$632</td><td class="vg">+4.6%</td><td class="vg">+6.5%</td><td>1.7%</td><td>18天</td></tr>
+        <tr class="bestrow"><td>阿德萊德 <span class="badge bt">空置率最低</span></td><td class="vt">$673</td><td class="vt">$547</td><td class="vg">+4.1%</td><td class="vg">+10%</td><td class="vg">0.9%</td><td>18天</td></tr>
+      </tbody>
+    </table></div>
+    <div style="margin-top:10px"><span class="src">SQM Research 2026.05.20</span><span class="src">Domain Q1 2026</span><span class="src">Cotality 2025.06</span></div>
+  </div>
+  <div id="t-growth" class="tc">
+    <div class="tw"><table>
+      <thead><tr><th>城市</th><th>年度增值（2026.04）</th><th>中位房價</th><th>5年累積</th><th>10年累積</th><th>Westpac 2026預測</th></tr></thead>
+      <tbody>
+        <tr class="bestrow"><td>伯斯 <span class="badge ba">最強</span></td><td class="vg">+21.5%</td><td>$1,024,000</td><td class="vg">+92.1%</td><td class="vg">+107.5%</td><td class="vg">~+5%</td></tr>
+        <tr><td>布里斯本</td><td class="vg">+17.5%</td><td>$1,078,000</td><td class="vg">+84.0%</td><td class="vg">+119.5%</td><td class="vg">~+5%</td></tr>
+        <tr><td>阿德萊德</td><td class="vg">+13.9%</td><td>$947,000</td><td class="vg">+77.4%</td><td class="vg">+111.4%</td><td class="vg">~+6.2%</td></tr>
+        <tr><td>雪梨</td><td class="va">+3.8%</td><td>$1,247,000</td><td class="va">+21.4%</td><td class="vg">+59.8%</td><td class="va">~+5%</td></tr>
+        <tr><td>墨爾本</td><td class="va">+1.9%</td><td>$853,000</td><td class="vr">+5.8%</td><td class="va">+20%</td><td class="va">~+5.5%</td></tr>
+      </tbody>
+    </table></div>
+    <div style="margin-top:10px"><span class="src">PropTrack 2026.04</span><span class="src">CoreLogic</span><span class="src">Westpac 2026</span></div>
+  </div>
+  <div id="t-investor" class="tc">
+    <div class="tw"><table>
+      <thead><tr><th>城市</th><th>獲利比率</th><th>中位持有</th><th>中位獲利</th><th>頂級公寓回報</th><th>投資者貸款佔比</th></tr></thead>
+      <tbody>
+        <tr class="bestrow"><td>布里斯本 <span class="badge ba">並列最高</span></td><td class="vg">99%</td><td>8.8年</td><td class="vg">$445,000</td><td class="vt">5.2%</td><td>41%</td></tr>
+        <tr class="bestrow"><td>阿德萊德 <span class="badge ba">並列最高</span></td><td class="vg">99%</td><td>9.0年</td><td class="vg">$395,000</td><td class="vt">5.0%</td><td>41%</td></tr>
+        <tr><td>伯斯</td><td class="vg">98%</td><td>10.8年</td><td class="vg">$320,000</td><td class="vt">5.7%</td><td>40%</td></tr>
+        <tr><td>雪梨</td><td>90%</td><td>10.1年</td><td>$380,000</td><td class="vt">6.4%</td><td>44%</td></tr>
+        <tr><td>墨爾本</td><td class="va">84%</td><td>9.7年</td><td class="va">$285,000</td><td class="vt">8.1%</td><td>36%</td></tr>
+      </tbody>
+    </table></div>
+    <div style="margin-top:10px"><span class="src">PropTrack × Westpac 2026</span></div>
+  </div>
+  <div id="t-strata" class="tc">
+    <div class="tw"><table>
+      <thead><tr><th>城市</th><th>排屋（年）</th><th>Mid-rise公寓（年）</th><th>High-rise公寓（年）</th><th>獨立屋</th></tr></thead>
+      <tbody>
+        <tr><td>雪梨 NSW</td><td>$2,124</td><td>$3,740</td><td>$5,440</td><td class="vg">$0</td></tr>
+        <tr><td>墨爾本 VIC</td><td>$1,872</td><td>$3,824</td><td>$5,524</td><td class="vg">$0</td></tr>
+        <tr><td>布里斯本 QLD</td><td>$1,700</td><td>$3,572</td><td>$5,100</td><td class="vg">$0</td></tr>
+        <tr class="bestrow"><td>伯斯 WA</td><td class="vg">$1,616</td><td class="vg">$3,232</td><td class="vg">$4,676</td><td class="vg">$0</td></tr>
+        <tr class="bestrow"><td>阿德萊德 SA <span class="badge bt">最低</span></td><td class="vg">$1,444</td><td class="vg">$2,804</td><td class="vg">$4,080</td><td class="vg">$0</td></tr>
+      </tbody>
+    </table></div>
+    <div style="margin-top:10px"><span class="src">全澳Strata費用數據庫 2026（新建0-5年物件）</span></div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- CITY COMPARISON -->
+<div class="section">
+  <div class="section-header"><span class="section-num">06</span><div class="section-title">五城市即時比較</div></div>
+  <div class="ccg" id="city-grid"></div>
+</div>
+
+<div class="divider"></div>
+
+<!-- S8 LOAN -->
+<div class="section" id="loan">
+  <div class="section-header"><span class="section-num">07</span><div class="section-title">外國人貸款資訊</div></div>
+  <div class="g2">
+    <div class="card">
+      <div style="font-size:16px;font-weight:700;color:var(--ink);margin-bottom:14px;font-family:'Lora',serif">HSBC Australia</div>
+      <div class="bk">
+        <div class="bkr"><span class="bklabel">LVR ≤ 60%</span><span class="bkval vt">6.19% p.a.</span></div>
+        <div class="bkr"><span class="bklabel">LVR 60–70%</span><span class="bkval vt">6.24% p.a.</span></div>
+        <div class="bkr"><span class="bklabel">LVR 70–80%（本息）</span><span class="bkval vt">6.29% p.a.</span></div>
+        <div class="bkr"><span class="bklabel">LVR > 80%</span><span class="bkval va">6.59% p.a.</span></div>
+      </div>
+      <div class="note note-t" style="font-size:12px">✅ 接受非澳洲居民申請人</div>
+    </div>
+    <div class="card">
+      <div style="font-size:16px;font-weight:700;color:var(--ink);margin-bottom:14px;font-family:'Lora',serif">中國銀行澳洲分行</div>
+      <div class="bk">
+        <div class="bkr"><span class="bklabel">LVR ≤ 80% 變動利率（本息）</span><span class="bkval vt">6.13% p.a.</span></div>
+        <div class="bkr"><span class="bklabel">LVR ≤ 80% 只還利息</span><span class="bkval vt">6.23% p.a.</span></div>
+        <div class="bkr"><span class="bklabel">3年固定</span><span class="bkval">6.59% p.a.</span></div>
+        <div class="bkr"><span class="bklabel">5年固定</span><span class="bkval">6.59% p.a.</span></div>
+      </div>
+      <div class="note note-a" style="font-size:12px">⚠️ 需澳洲收入證明 · 有效至2026年6月30日</div>
+    </div>
+  </div>
+  <div class="note note-r" style="margin-top:12px;font-size:12px">⚠️ Westpac明確不接受非澳洲居民借款人。四大銀行大部分不接受非居民。建議諮詢專門處理非居民貸款的 Mortgage Broker。</div>
+</div>
+
+<div class="divider"></div>
+
+<!-- S9 REC -->
+<div class="section" id="recommendation">
+  <div class="section-header"><span class="section-num">08</span><div class="section-title">投資建議</div></div>
+
+  <!-- Context note -->
+  <div class="note note-a" style="margin-bottom:24px">
+    ⚠️ <strong>核心前提：</strong>伯斯財務數字全面最佳（增值最強、回報率最高、零土地稅），但$100萬以內在伯斯只能買中環偏遠地段或小面積物件。建議以下按<strong>實際預算</strong>選擇最合適的城市和地段，而非單純看財務排名。
+  </div>
+
+  <!-- Budget bands -->
+  <div style="margin-bottom:24px">
+
+    <!-- $80-90万 -->
+    <div class="rec" style="margin-bottom:12px;border-left:4px solid var(--teal)">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;flex-wrap:wrap">
+        <div style="font-family:'DM Mono',monospace;font-size:14px;font-weight:700;color:var(--white);background:var(--teal);padding:5px 14px;border-radius:20px">$80–90萬</div>
+        <div style="font-size:13px;color:var(--gray-500)">此預算範圍各城市對比</div>
+      </div>
+      <div class="g3">
+        <div style="background:var(--teal-ll);border:1.5px solid rgba(10,158,138,.2);border-radius:var(--radius);padding:14px">
+          <div style="font-weight:700;color:var(--teal);margin-bottom:6px">✅ 首選：墨爾本 Southbank</div>
+          <div style="font-size:13px;color:var(--ink3);line-height:1.8">此預算唯一能買到<strong>市中心</strong>新建2房公寓的選項（$746,000–$898,000）。週租金可達$950，毛回報率約5%+。但需接受每年約$11,000的4%土地稅附加，長期侵蝕回報。</div>
+        </div>
+        <div style="background:var(--gray-50);border:1.5px solid var(--gray-200);border-radius:var(--radius);padding:14px">
+          <div style="font-weight:700;color:var(--ink3);margin-bottom:6px">次選：布里斯本 Carseldine</div>
+          <div style="font-size:13px;color:var(--ink3);line-height:1.8">外環（距CBD 16km），$814,000–$869,000，2房2浴。初期土地稅不起徵（土地價值未達$60萬門檻）。地段偏遠是主要缺點，但長期增值潛力強。</div>
+        </div>
+        <div style="background:var(--gray-50);border:1.5px solid var(--gray-200);border-radius:var(--radius);padding:14px">
+          <div style="font-weight:700;color:var(--ink3);margin-bottom:6px">伯斯：僅外環可選</div>
+          <div style="font-size:13px;color:var(--ink3);line-height:1.8">只有Wellard（距CBD 45km）$650,000可選，地段太偏遠，不建議作為長期投資。Palmyra中環要$85萬+才能進場。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- $90-100万 -->
+    <div class="rec gold" style="margin-bottom:12px;border-left:4px solid var(--amber)">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;flex-wrap:wrap">
+        <div style="font-family:'DM Mono',monospace;font-size:14px;font-weight:700;color:var(--white);background:var(--amber);padding:5px 14px;border-radius:20px">$90–100萬</div>
+        <div style="font-size:13px;color:var(--amber)">⭐ 大多數投資者的最佳預算區間</div>
+      </div>
+      <div class="g3">
+        <div style="background:var(--amber-ll);border:1.5px solid rgba(212,130,10,.3);border-radius:var(--radius);padding:14px">
+          <div style="font-weight:700;color:var(--amber);margin-bottom:6px">🥇 首選：阿德萊德 West Lakes</div>
+          <div style="font-size:13px;color:var(--ink3);line-height:1.8">$920,500–$979,000，2房2浴，中環（距CBD約9km）。<strong>零土地稅附加</strong>、空置率最低（0.9%）、Strata費最低。Unit租金年增+10%，15年淨回報最穩定。</div>
+          <div style="margin-top:8px"><span class="badge bt">零土地稅</span><span class="badge bg">空置率0.9%</span></div>
+        </div>
+        <div style="background:var(--amber-ll);border:1.5px solid rgba(212,130,10,.3);border-radius:var(--radius);padding:14px">
+          <div style="font-weight:700;color:var(--amber);margin-bottom:6px">🥇 並列首選：布里斯本 Mt Gravatt</div>
+          <div style="font-size:13px;color:var(--ink3);line-height:1.8">$889,000–$919,000，2房2浴，中外環（距CBD約9km）。初期<strong>土地稅不起徵</strong>，10年增值+119.5%全澳最高，2032奧運催化，99%投資者獲利$445,000。</div>
+          <div style="margin-top:8px"><span class="badge bt">初期免土地稅</span><span class="badge bg">奧運增值</span></div>
+        </div>
+        <div style="background:var(--gray-50);border:1.5px solid var(--gray-200);border-radius:var(--radius);padding:14px">
+          <div style="font-weight:700;color:var(--ink3);margin-bottom:6px">伯斯 Palmyra（中環）</div>
+          <div style="font-size:13px;color:var(--ink3);line-height:1.8">$850,000–$940,000，中環。零土地稅、增值最強，但面積略小（65–75m²）。伯斯財務數字最好，地段稍遜於阿德萊德West Lakes。若能接受，也是很好的選擇。</div>
+          <div style="margin-top:8px"><span class="badge bt">零土地稅</span><span class="badge ba">增值最強</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- $100-110万 -->
+    <div class="rec" style="margin-bottom:12px;border-left:4px solid var(--sky)">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;flex-wrap:wrap">
+        <div style="font-family:'DM Mono',monospace;font-size:14px;font-weight:700;color:var(--white);background:var(--sky);padding:5px 14px;border-radius:20px">$100–110萬</div>
+        <div style="font-size:13px;color:var(--sky)">選擇開始豐富，地段明顯提升</div>
+      </div>
+      <div class="g3">
+        <div style="background:var(--sky-l);border:1.5px solid rgba(45,125,210,.2);border-radius:var(--radius);padding:14px">
+          <div style="font-weight:700;color:var(--sky);margin-bottom:6px">🥇 首選：伯斯 East Perth / Como</div>
+          <div style="font-size:13px;color:var(--ink3);line-height:1.8">$1,120,000–$1,139,000，內環（距CBD 2–3km）。<strong>零土地稅附加</strong>、全澳最強增值、步行可達市中心。這個預算才是伯斯真正發揮優勢的起點。</div>
+          <div style="margin-top:8px"><span class="badge bt">零土地稅</span><span class="badge ba">內環好地段</span></div>
+        </div>
+        <div style="background:var(--sky-l);border:1.5px solid rgba(45,125,210,.2);border-radius:var(--radius);padding:14px">
+          <div style="font-weight:700;color:var(--sky);margin-bottom:6px">並列：布里斯本 Bowen Hills</div>
+          <div style="font-size:13px;color:var(--ink3);line-height:1.8">$1,049,000–$1,075,000，內環（距CBD 3km，奧運周邊區域）。地段大幅提升，奧運催化更直接。土地稅開始接近起徵點，需留意。</div>
+          <div style="margin-top:8px"><span class="badge bs">奧運核心圈</span><span class="badge ba">⚠️ 土地稅即將起徵</span></div>
+        </div>
+        <div style="background:var(--gray-50);border:1.5px solid var(--gray-200);border-radius:var(--radius);padding:14px">
+          <div style="font-weight:700;color:var(--ink3);margin-bottom:6px">阿德萊德 West Lakes / Kent Town</div>
+          <div style="font-size:13px;color:var(--ink3);line-height:1.8">$1,001,000–$1,070,000，中環進內環。零土地稅優勢持續，但阿德萊德市場規模較小，未來流動性相對受限。</div>
+          <div style="margin-top:8px"><span class="badge bt">零土地稅</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- $110-120万 -->
+    <div class="rec" style="margin-bottom:0;border-left:4px solid var(--sage)">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;flex-wrap:wrap">
+        <div style="font-family:'DM Mono',monospace;font-size:14px;font-weight:700;color:var(--white);background:var(--sage);padding:5px 14px;border-radius:20px">$110–120萬</div>
+        <div style="font-size:13px;color:var(--sage)">伯斯全面勝出的預算區間</div>
+      </div>
+      <div class="g3">
+        <div style="background:var(--sage-l);border:1.5px solid rgba(74,140,106,.3);border-radius:var(--radius);padding:14px">
+          <div style="font-weight:700;color:var(--sage);margin-bottom:6px">🏆 強烈首選：伯斯 East Perth / Fremantle / Como</div>
+          <div style="font-size:13px;color:var(--ink3);line-height:1.8">$1,116,000–$1,205,000，優質內環。零土地稅附加、全澳最強增值（+21.5%）、高週租金（$870–$900）、低Strata費。財務和地段全面最優，是外國投資者在這個預算最理想的選擇。</div>
+          <div style="margin-top:8px"><span class="badge bt">零土地稅</span><span class="badge ba">全面最優</span><span class="badge bg">+21.5%增值</span></div>
+        </div>
+        <div style="background:var(--gray-50);border:1.5px solid var(--gray-200);border-radius:var(--radius);padding:14px">
+          <div style="font-weight:700;color:var(--ink3);margin-bottom:6px">布里斯本 Lutwyche / Upper Mt Gravatt</div>
+          <div style="font-size:13px;color:var(--ink3);line-height:1.8">$1,075,000–$1,129,000，內環成熟社區。土地稅開始陸續起徵，但奧運長期增值潛力仍強。適合看好奧運效應的投資者。</div>
+        </div>
+        <div style="background:var(--gray-50);border:1.5px solid var(--gray-200);border-radius:var(--radius);padding:14px">
+          <div style="font-weight:700;color:var(--ink3);margin-bottom:6px">阿德萊德 Unley / Glenside</div>
+          <div style="font-size:13px;color:var(--ink3);line-height:1.8">$1,150,000–$1,180,000，內環。零土地稅優勢仍在，但部分物件為1浴或大面積高價，性價比稍遜於伯斯內環。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- City characteristic summary -->
+  <div class="card card-sky">
+    <div style="font-family:'Lora',serif;font-size:16px;font-weight:600;color:var(--ink);margin-bottom:16px">各城市核心特質總結</div>
+    <div class="g4">
+      <div style="text-align:center;padding:14px;background:var(--gray-50);border-radius:var(--radius);border:1px solid var(--gray-200)">
+        <div style="font-size:22px;margin-bottom:6px">🏆</div>
+        <div style="font-weight:700;color:var(--ink);margin-bottom:4px">伯斯</div>
+        <div style="font-size:12px;color:var(--gray-500);line-height:1.7">財務全面最優<br>需$110萬+才發揮<br>零土地稅<br>+21.5%增值</div>
+      </div>
+      <div style="text-align:center;padding:14px;background:var(--gray-50);border-radius:var(--radius);border:1px solid var(--gray-200)">
+        <div style="font-size:22px;margin-bottom:6px">🛡️</div>
+        <div style="font-weight:700;color:var(--ink);margin-bottom:4px">阿德萊德</div>
+        <div style="font-size:12px;color:var(--gray-500);line-height:1.7">$90–100萬最穩定<br>零土地稅<br>空置率最低0.9%<br>現金流最可預測</div>
+      </div>
+      <div style="text-align:center;padding:14px;background:var(--gray-50);border-radius:var(--radius);border:1px solid var(--gray-200)">
+        <div style="font-size:22px;margin-bottom:6px">🚀</div>
+        <div style="font-weight:700;color:var(--ink);margin-bottom:4px">布里斯本</div>
+        <div style="font-size:12px;color:var(--gray-500);line-height:1.7">長期增值最強<br>10年+119.5%<br>奧運催化<br>初期土地稅$0</div>
+      </div>
+      <div style="text-align:center;padding:14px;background:var(--rose-l);border-radius:var(--radius);border:1px solid rgba(201,57,74,.15)">
+        <div style="font-size:22px;margin-bottom:6px">⚠️</div>
+        <div style="font-weight:700;color:var(--rose);margin-bottom:4px">墨爾本</div>
+        <div style="font-size:12px;color:var(--gray-500);line-height:1.7">入場最便宜<br>但4%土地稅/年<br>近年增值最弱<br>長期有潛力</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="divider"></div>
+
+<!-- S_APT: APARTMENT-SPECIFIC DATA -->
+<div class="section" id="apt-data">
+  <div class="section-header"><span class="section-num">09</span><div class="section-title">公寓專屬數據與風險分析</div></div>
+
+  <div class="note note-a" style="margin-bottom:20px;font-size:13px">⚠️ <strong>數據說明：</strong>本報告部分增值數據（如PropTrack +21.5%）引用的是所有物件類型的中位數（含獨立屋）。公寓的增值率通常<strong>低於獨立屋5–10個百分點</strong>，且受供應週期影響不同。以下提供公寓專屬數據作為更精準的參考。</div>
+
+  <div style="margin-bottom:24px">
+    <div style="font-size:15px;font-weight:700;color:var(--ink);margin-bottom:14px;font-family:'Lora',serif">📊 公寓（Unit）專屬數據對比</div>
+    <div class="tw"><table>
+      <thead><tr><th>城市</th><th>Unit年增值率</th><th>House年增值率</th><th>Unit毛回報率</th><th>Unit vs House</th><th>供應風險</th></tr></thead>
+      <tbody>
+        <tr class="bestrow"><td>伯斯 Perth</td><td class="vg">+27%</td><td class="vg">+21.5%</td><td class="vt">5.8%</td><td class="vg">Unit反超（稀缺性）</td><td><span class="badge bg">低</span></td></tr>
+        <tr><td>布里斯本 Brisbane</td><td class="vg">+14%</td><td class="vg">+17.5%</td><td class="vt">5.1%</td><td class="va">Unit略低約3%</td><td><span class="badge ba">中</span></td></tr>
+        <tr><td>阿德萊德 Adelaide</td><td class="vg">+10%</td><td class="vg">+13.9%</td><td class="vt">4.9%</td><td class="va">Unit略低約4%</td><td><span class="badge bg">低</span></td></tr>
+        <tr><td>雪梨 Sydney</td><td class="va">+4.2%</td><td class="va">+3.8%</td><td class="vt">4.0%</td><td class="vg">Unit略高</td><td><span class="badge ba">中高</span></td></tr>
+        <tr><td>墨爾本 Melbourne</td><td class="va">+3%</td><td class="va">+1.9%</td><td class="vt">4.8%</td><td class="va">Unit略高</td><td><span class="badge br">高</span></td></tr>
+      </tbody>
+    </table></div>
+    <div style="margin-top:10px"><span class="src">PropTrack 2026.04</span><span class="src">SQM Research</span><span class="src">CoreLogic Unit-specific data</span></div>
+  </div>
+
+  <div class="g2" style="margin-bottom:24px">
+    <div class="card">
+      <div style="font-size:15px;font-weight:700;color:var(--ink);margin-bottom:14px;font-family:'Lora',serif">🏗️ 新公寓供應風險</div>
+      <div style="font-size:13px;color:var(--ink4);line-height:1.85;margin-bottom:14px">供應過剩是公寓投資者最常踩的坑。新公寓供應量大的區域，增值受壓、出租競爭激烈、空置率上升。</div>
+      <div class="tw"><table>
+        <thead><tr><th>城市/地段</th><th>供應風險</th><th>主要原因</th></tr></thead>
+        <tbody>
+          <tr class="bestrow"><td>阿德萊德 Adelaide</td><td><span class="badge bg">低</span></td><td class="vm">市場規模小，開發商少，新供給有限</td></tr>
+          <tr class="bestrow"><td>伯斯 Perth 中環</td><td><span class="badge bg">低</span></td><td class="vm">近年供給受限，需求旺盛</td></tr>
+          <tr><td>布里斯本 Brisbane 外環</td><td><span class="badge bt">中低</span></td><td class="vm">外環供給分散，不過度集中</td></tr>
+          <tr><td>布里斯本 Brisbane 內城</td><td><span class="badge ba">中高</span></td><td class="vm">奧運前開發熱潮，供給持續增加</td></tr>
+          <tr><td>墨爾本 CBD / Southbank</td><td><span class="badge br">高</span></td><td class="vm">Investor density高，大量期房待交付</td></tr>
+          <tr><td>雪梨 CBD tower</td><td><span class="badge ba">中高</span></td><td class="vm">高層供給集中，競爭激烈</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <div class="card">
+      <div style="font-size:15px;font-weight:700;color:var(--ink);margin-bottom:14px;font-family:'Lora',serif">🚪 出場流動性分析</div>
+      <div style="font-size:13px;color:var(--ink4);line-height:1.85;margin-bottom:14px">10年後能否順利賣出，是外國投資者常忽略的問題。物件類型直接影響未來出售的難易程度與議價空間。</div>
+      <div class="tw"><table>
+        <thead><tr><th>物件類型</th><th>流動性</th><th>說明</th></tr></thead>
+        <tbody>
+          <tr class="bestrow"><td>精品低層公寓（Boutique Low-rise）</td><td><span class="badge bg">高</span></td><td class="vm">買家池廣，增值較穩，競爭少</td></tr>
+          <tr><td>Mid-rise 4–9層</td><td><span class="badge bt">中高</span></td><td class="vm">成交量穩定，自住+投資買家均有</td></tr>
+          <tr><td>CBD 高層大樓</td><td><span class="badge ba">中</span></td><td class="vm">成交量高但競爭激烈，價格敏感</td></tr>
+          <tr><td>純投資者大樓</td><td><span class="badge br">弱</span></td><td class="vm">自住買家少，出售時議價空間小</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </div>
+
+  <div class="card card-teal" style="margin-bottom:24px">
+    <div style="font-size:15px;font-weight:700;color:var(--ink);margin-bottom:14px;font-family:'Lora',serif">🔍 開發商盡職調查清單（Due Diligence）</div>
+    <div style="font-size:13px;color:var(--ink4);margin-bottom:12px">澳洲公寓最大風險往往不是城市，而是樓本身。外國買家購買前必須核查：</div>
+    <div class="g2">
+      <div>
+        <div style="font-weight:700;color:var(--ink3);margin-bottom:8px;font-size:13px">📋 必查項目</div>
+        <div class="bk">
+          <div class="bkr"><span class="bklabel">Builder Warranty（建商保固）</span><span class="bkval" style="color:var(--sage)">確認保固年期及承保範圍</span></div>
+          <div class="bkr"><span class="bklabel">Defect History（缺陷記錄）</span><span class="bkval" style="color:var(--sage)">查詢開發商過往項目投訴記錄</span></div>
+          <div class="bkr"><span class="bklabel">10年 Strata Fee Forecast</span><span class="bkval" style="color:var(--sage)">確認物業費走勢，避免日後激增</span></div>
+          <div class="bkr"><span class="bklabel">Sinking Fund（維修儲備金）</span><span class="bkval" style="color:var(--sage)">確認儲備是否充足</span></div>
+          <div class="bkr"><span class="bklabel">Combustible Cladding（可燃外牆）</span><span class="bkval" style="color:var(--rose)">確認合規，部分舊建築仍有風險</span></div>
+          <div class="bkr"><span class="bklabel">Embedded Network（嵌入式網絡）</span><span class="bkval" style="color:var(--rose)">影響租客選擇，降低出租吸引力</span></div>
+        </div>
+      </div>
+      <div>
+        <div style="font-weight:700;color:var(--ink3);margin-bottom:8px;font-size:13px">⚠️ 常見陷阱</div>
+        <div class="bk">
+          <div class="bkr"><span class="bklabel">Student-only Building</span><span class="bkval" style="color:var(--rose)">銀行不願貸款，出售困難</span></div>
+          <div class="bkr"><span class="bklabel">Rental Guarantee（租金保證）</span><span class="bkval" style="color:var(--rose)">行銷噱頭，保證期後風險自負</span></div>
+          <div class="bkr"><span class="bklabel">Developer Rebate（隱性回扣）</span><span class="bkval" style="color:var(--rose)">壓低實際成交價，影響估價及貸款</span></div>
+          <div class="bkr"><span class="bklabel">Valuation Shortfall Risk</span><span class="bkval" style="color:var(--rose)">交屋時估價低於購買價，需補差額</span></div>
+          <div class="bkr"><span class="bklabel">無 Depreciation Schedule</span><span class="bkval" style="color:var(--amber)">損失每年$8,000–$15,000節稅機會</span></div>
+          <div class="bkr"><span class="bklabel">高 Investor Density Tower</span><span class="bkval" style="color:var(--amber)">自住買家少，出售競爭激烈</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card-sky">
+    <div style="font-size:15px;font-weight:700;color:var(--ink);margin-bottom:6px;font-family:'Lora',serif">📈 情境分析（Sensitivity Analysis）</div>
+    <div style="font-size:13px;color:var(--ink4);margin-bottom:16px">以伯斯$890,000 Palmyra中環為基準，三種情境下15年淨回報估算：</div>
+    <div class="g3">
+      <div style="background:var(--rose-l);border:1.5px solid rgba(201,57,74,.2);border-radius:var(--radius);padding:16px;text-align:center">
+        <div style="font-size:12px;font-weight:700;color:var(--rose);letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px">🐻 悲觀 Bear Case</div>
+        <div style="font-size:12px;color:var(--ink4);line-height:1.8;margin-bottom:10px">房價 +2%/年<br>租金 +1%/年<br>資源周期下行、人口流失</div>
+        <div style="font-family:'DM Mono',monospace;font-size:24px;font-weight:700;color:var(--rose)">+$180k</div>
+        <div style="font-size:11px;color:var(--gray-500);margin-top:4px">15年淨回報估算</div>
+      </div>
+      <div style="background:var(--teal-ll);border:1.5px solid rgba(10,158,138,.25);border-radius:var(--radius);padding:16px;text-align:center">
+        <div style="font-size:12px;font-weight:700;color:var(--teal);letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px">📊 基準 Base Case</div>
+        <div style="font-size:12px;color:var(--ink4);line-height:1.8;margin-bottom:10px">房價 第1-3年+7%→放緩至+3%<br>租金 第1-3年+5%→放緩至+2.5%<br>本報告使用的保守模型</div>
+        <div style="font-family:'DM Mono',monospace;font-size:24px;font-weight:700;color:var(--teal)">+$650k</div>
+        <div style="font-size:11px;color:var(--gray-500);margin-top:4px">15年淨回報估算</div>
+      </div>
+      <div style="background:var(--sage-l);border:1.5px solid rgba(74,140,106,.25);border-radius:var(--radius);padding:16px;text-align:center">
+        <div style="font-size:12px;font-weight:700;color:var(--sage);letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px">🚀 樂觀 Bull Case</div>
+        <div style="font-size:12px;color:var(--ink4);line-height:1.8;margin-bottom:10px">房價 +8%/年持續<br>租金 +6%/年<br>人口持續流入、資源繁榮</div>
+        <div style="font-family:'DM Mono',monospace;font-size:24px;font-weight:700;color:var(--sage)">+$1,450k</div>
+        <div style="font-size:11px;color:var(--gray-500);margin-top:4px">15年淨回報估算</div>
+      </div>
+    </div>
+    <div class="note note-a" style="margin-top:14px;font-size:12px">⚠️ 以上為概念性估算，不構成投資建議。實際回報取決於具體物件、地段、持有成本及市場環境變化。</div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- S_PITFALLS: COMMON MISTAKES -->
+<div class="section" id="pitfalls">
+  <div class="section-header"><span class="section-num">10</span><div class="section-title">外國投資者最常踩的坑</div></div>
+  <div style="font-size:14px;color:var(--ink4);margin-bottom:20px;line-height:1.9">以下是外國投資者在澳洲公寓市場最常犯的錯誤，了解這些往往比選對城市更重要。</div>
+  <div class="g2">
+    <div>
+      <div class="pol r" style="margin-bottom:10px">
+        <div class="pol-title">❌ 被「租金保證」吸引</div>
+        <div class="pol-body">開發商提供2–3年租金保證，通常已將成本計入售價（房價虛高）。保證期一結束，市場租金往往低於承諾金額。此類物件銀行估值偏低，交屋時可能面臨估價不足風險。</div>
+      </div>
+      <div class="pol a" style="margin-bottom:10px">
+        <div class="pol-title">⚠️ 忽略 Valuation Shortfall 風險</div>
+        <div class="pol-body">期房從簽約到交屋可能相隔2–3年，若交屋時市場下跌，銀行估價低於購買價，買家需自行補足差額。外國人融資本已受限（最高70% LVR），此風險更加顯著。</div>
+      </div>
+      <div class="pol a" style="margin-bottom:10px">
+        <div class="pol-title">⚠️ 只看城市，不查開發商</div>
+        <div class="pol-body">選對城市但選錯開發商，結果可能是延遲交樓、建築質素差、高Strata費、缺陷工程。建議查閱開發商過往項目記錄及相關投訴，確認開發商財務狀況穩健。</div>
+      </div>
+      <div class="pol r" style="margin-bottom:10px">
+        <div class="pol-title">❌ 購買「純投資者大樓」</div>
+        <div class="pol-body">部分CBD大樓幾乎全為投資者持有，10年後出售時只能賣給其他投資者，議價空間極小。建議優先選擇混合自住+投資、低中密度的精品項目，出場流動性更佳。</div>
+      </div>
+    </div>
+    <div>
+      <div class="pol a" style="margin-bottom:10px">
+        <div class="pol-title">⚠️ 沒有申報折舊（Depreciation Schedule）</div>
+        <div class="pol-body">新建公寓每年可申報$8,000–$15,000的建築折舊，直接減少應稅收入。必須在首次出租前委託持牌QS（Quantity Surveyor）做折舊報告，事後補做效果大打折扣，是外國投資者最常損失的節稅機會。</div>
+      </div>
+      <div class="pol r" style="margin-bottom:10px">
+        <div class="pol-title">❌ 誤以為負扣稅人人適用</div>
+        <div class="pol-body">負扣稅效果取決於是否有<strong>澳洲應稅收入（Australian taxable income）</strong>可抵扣。若在澳洲無薪資或其他來源收入，虧損可累積留待未來使用，但無法當年立即抵稅。部分海外投資者對此有錯誤期望。</div>
+      </div>
+      <div class="pol a" style="margin-bottom:10px">
+        <div class="pol-title">⚠️ 低估真實持有成本</div>
+        <div class="pol-body">完整持有成本還包括：Water Rates（~$1,200/年）、Landlord Insurance（~$1,800/年）、會計費（~$800/年）、空置換租成本。全部計入後月均現金缺口比報告顯示的數字多約$317/月。</div>
+      </div>
+      <div class="pol s" style="margin-bottom:10px">
+        <div class="pol-title">ℹ️ 忽略 FIRB 費用隨價格遞增</div>
+        <div class="pol-body">FIRB費用依購買金額分級，並非固定$15,100。新建住宅（2025-26年度官方費率）：<br>
+          <table style="margin-top:8px;font-size:12px;width:100%;border-collapse:collapse">
+            <tr style="background:rgba(0,0,0,.04)"><th style="padding:5px 10px;text-align:left;border:1px solid rgba(0,0,0,.08)">購買金額</th><th style="padding:5px 10px;text-align:left;border:1px solid rgba(0,0,0,.08)">FIRB費用</th></tr>
+            <tr><td style="padding:5px 10px;border:1px solid rgba(0,0,0,.08)">$75,000以下</td><td style="padding:5px 10px;border:1px solid rgba(0,0,0,.08)">$4,500</td></tr>
+            <tr style="background:rgba(10,158,138,.06)"><td style="padding:5px 10px;border:1px solid rgba(0,0,0,.08)"><strong>$100萬以下</strong></td><td style="padding:5px 10px;border:1px solid rgba(0,0,0,.08)"><strong>$15,100</strong>（本報告使用值）</td></tr>
+            <tr><td style="padding:5px 10px;border:1px solid rgba(0,0,0,.08)">$100萬–$200萬</td><td style="padding:5px 10px;border:1px solid rgba(0,0,0,.08)">$30,300</td></tr>
+            <tr><td style="padding:5px 10px;border:1px solid rgba(0,0,0,.08)">$200萬–$300萬</td><td style="padding:5px 10px;border:1px solid rgba(0,0,0,.08)">$60,600</td></tr>
+            <tr><td style="padding:5px 10px;border:1px solid rgba(0,0,0,.08)">$300萬–$400萬</td><td style="padding:5px 10px;border:1px solid rgba(0,0,0,.08)">$90,900</td></tr>
+          </table>
+          <span style="font-size:11px;opacity:.7;display:block;margin-top:6px">來源：foreigninvestment.gov.au · 2025-26年度費用表（2026年1月更新版）</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="disc">
+  <strong style="color:var(--ink3)">⚠️ 免責聲明</strong><br><br>
+  本報告僅供參考，不構成財務、稅務或法律建議。稅務計算基於2026年最新官方數據，但可能因個人情況及政策變動而有所不同。部分政策（CGT改革、負扣稅修訂）尚未完成立法，細節可能調整。土地稅以土地價值估算為房價40%計算，實際以各州稅務局評估為準。增值數據為歷史數據，不代表未來回報。物件價格來自2026年5月掛牌，僅供參考。強烈建議諮詢持牌澳洲稅務顧問、律師及專門處理非居民貸款的Mortgage Broker。<br><br>
+  <strong style="color:var(--ink4)">數據來源：</strong>revenue.wa.gov.au · qro.qld.gov.au · sro.vic.gov.au · revenuesa.sa.gov.au · revenue.nsw.gov.au · foreigninvestment.gov.au · PropTrack · SQM Research · Domain · Cotality · Westpac · HSBC Australia · Bank of China Australia · PwC Australia · CoreLogic · realestate.com.au · domain.com.au
+</div>
+</div>
+
+<script>
+// ── DATA ──
+const CITY_DATA = {
+  perth: {
+    name:'伯斯', st:'WA',
+    sd: p => { if(p<=120000)return p*.019; if(p<=150000)return 2280+(p-120000)*.0285; if(p<=360000)return 3135+(p-150000)*.038; if(p<=725000)return 11115+(p-360000)*.0475; return 28453+(p-725000)*.0515 },
+    fs:.07, lts:0, ltt:300000, ltn:'無外國人附加稅',
+    vac:.012, strata:3232, g:.215,
+    pg: yr => yr<=3?.07:yr<=7?.05:.03,
+    bands: [
+      { label:'$60–70萬', price:650000, zone:'outer', zoneLabel:'外環', suburb:'Wellard', detail:'南部外環，距CBD約45km', rent:620, listing:'From $650,000', desc:'2房2浴1車 · 76–83m²' },
+      { label:'$80–90萬', price:870000, zone:'mid', zoneLabel:'中環', suburb:'Palmyra', detail:'距CBD約10km，Canning Hwy沿線', rent:720, listing:'$850,000–$940,000', desc:'2房2浴1車 · 65–75m²' },
+      { label:'$90–100萬', price:970000, zone:'inner', zoneLabel:'內環', suburb:'Como / Subiaco', detail:'距CBD約6km，近Perth CBD河邊', rent:800, listing:'From $970,000', desc:'2房2浴1車 · 65–83m²' },
+      { label:'$100–110萬', price:1050000, zone:'inner', zoneLabel:'內環', suburb:'East Perth / West Perth', detail:'距CBD約2–3km，步行可達市中心', rent:870, listing:'$1,120,000–$1,139,000', desc:'2房2浴1車 · 82–88m²' },
+      { label:'$110–120萬', price:1130000, zone:'inner', zoneLabel:'內環', suburb:'East Perth / Fremantle', detail:'內環優質地段，Fremantle文化區', rent:900, listing:'$1,116,000–$1,205,000', desc:'2房2浴1–2車 · 86–118m²' },
+    ]
+  },
+  adelaide: {
+    name:'阿德萊德', st:'SA',
+    sd: p => { if(p<=12000)return p*.01; if(p<=30000)return 120+(p-12000)*.02; if(p<=50000)return 480+(p-30000)*.03; if(p<=100000)return 1080+(p-50000)*.035; if(p<=200000)return 2830+(p-100000)*.04; if(p<=250000)return 6830+(p-200000)*.0425; if(p<=300000)return 8955+(p-250000)*.0475; if(p<=500000)return 11330+(p-300000)*.05; return 21330+(p-500000)*.055 },
+    fs:.07, lts:0, ltt:732000, ltn:'無外國人附加稅',
+    vac:.009, strata:2804, g:.139,
+    pg: yr => yr<=3?.07:yr<=7?.05:.03,
+    bands: [
+      { label:'$60–70萬', price:662000, zone:'outer', zoneLabel:'外環', suburb:'Kilkenny', detail:'北部外環，注意多為1浴室', rent:560, listing:'$659,000–$664,000', desc:'2房1浴1車 · 77m²' },
+      { label:'$80–90萬', price:879000, zone:'inner', zoneLabel:'內環', suburb:'Bowden / Glenside', detail:'Bowden距CBD約3km，Glenside約5km', rent:720, listing:'$879,000–$919,000', desc:'2房2浴1車 · 多種面積' },
+      { label:'$90–100萬', price:950000, zone:'mid', zoneLabel:'中環', suburb:'West Lakes / Glenside', detail:'West Lakes距CBD約9km，近海灘', rent:800, listing:'$920,500–$979,000', desc:'2房2浴1車 · 107–110m²' },
+      { label:'$100–110萬', price:1001000, zone:'mid', zoneLabel:'中環', suburb:'West Lakes', detail:'近海灘，休閒生活圈', rent:800, listing:'$1,001,000', desc:'2房2浴1車 · 110m²' },
+      { label:'$110–120萬', price:1150000, zone:'inner', zoneLabel:'內環', suburb:'Unley / Glenside', detail:'Unley距CBD約3km，成熟社區', rent:850, listing:'$1,150,000–$1,180,000', desc:'2房1–2浴 · 大面積' },
+    ]
+  },
+  brisbane: {
+    name:'布里斯本', st:'QLD',
+    sd: p => { if(p<=5000)return 0; if(p<=75000)return(p-5000)*.015; if(p<=540000)return 1050+(p-75000)*.035; if(p<=1000000)return 17325+(p-540000)*.045; return 38025+(p-1000000)*.0575 },
+    fs:.08, lts:.03, ltt:600000, ltn:'3%附加（土地>$60萬）',
+    vac:.017, strata:3572, g:.175,
+    pg: yr => yr<=3?.07:yr<=7?.05:.03,
+    bands: [
+      { label:'$80–90萬', price:869000, zone:'outer', zoneLabel:'外環', suburb:'Carseldine', detail:'北部外環，距CBD約16km，近火車站', rent:650, listing:'$814,000–$869,000', desc:'2房2浴1車 · 87–96m²' },
+      { label:'$90–100萬', price:919000, zone:'outer', zoneLabel:'外環', suburb:'Mt Gravatt / Chermside', detail:'南/北部外環，距CBD約9km', rent:650, listing:'$889,000–$990,000', desc:'2房2浴1車 · 多種面積' },
+      { label:'$100–110萬', price:1049000, zone:'inner', zoneLabel:'內環', suburb:'Bowen Hills / Windsor', detail:'距CBD約3–4km，奧運周邊區域', rent:850, listing:'$1,049,000–$1,075,000', desc:'2房2浴1車 · 93–103m²' },
+      { label:'$110–120萬', price:1075000, zone:'inner', zoneLabel:'內環', suburb:'Lutwyche / Upper Mt Gravatt', detail:'內環成熟社區，交通便利', rent:850, listing:'$1,075,000–$1,129,000', desc:'2房2浴1車 · 93–110m²' },
+    ]
+  },
+  melbourne: {
+    name:'墨爾本', st:'VIC',
+    sd: p => { if(p<=25000)return p*.014; if(p<=130000)return 350+(p-25000)*.024; if(p<=960000)return 2870+(p-130000)*.06; if(p<=2000000)return p*.055; return 110000+(p-2000000)*.065 },
+    fs:.08, lts:.04, ltt:50000, ltn:'4% Absentee（土地>$5萬）',
+    vac:.014, strata:3824, g:.019,
+    pg: yr => yr<=3?.05:yr<=7?.04:.03,
+    bands: [
+      { label:'$60–70萬', price:615000, zone:'outer', zoneLabel:'外環', suburb:'Seddon / West Side Place', detail:'Seddon距CBD約6km；West Side Place為CBD期房', rent:600, listing:'From $495,000–$640,000', desc:'2房1–2浴1車 · 多種面積' },
+      { label:'$70–80萬', price:700000, zone:'inner', zoneLabel:'內環', suburb:'Footscray / St Kilda / Seddon', detail:'距CBD約5–8km，多元化社區', rent:720, listing:'$676,000–$712,000', desc:'2房1–2浴1車 · 83–85m²' },
+      { label:'$80–90萬', price:820000, zone:'cbd', zoneLabel:'市中心', suburb:'Southbank / South Melbourne', detail:'Southbank在CBD南岸，直接毗鄰市中心。注意：Southbank investor density高、strata費偏高、供應量大，長期資本增值未必優於低密度內城區（如South Melbourne、Richmond）', rent:950, listing:'$746,000–$898,000', desc:'2房2浴 · 65–94m²' },
+      { label:'$90–100萬', price:920000, zone:'cbd', zoneLabel:'市中心', suburb:'Southbank / Richmond / South Melbourne', detail:'CBD核心或緊鄰，各大學醫院周邊', rent:950, listing:'$820,000–$998,000', desc:'2房2浴 · 82–117m²' },
+      { label:'$100–110萬', price:1040000, zone:'cbd', zoneLabel:'市中心', suburb:'Melbourne CBD / South Melbourne', detail:'市中心核心地段', rent:950, listing:'$1,040,000–$1,075,000', desc:'2房2浴 · 多種面積' },
+      { label:'$110–120萬', price:1150000, zone:'cbd', zoneLabel:'市中心', suburb:'Docklands / Melbourne CBD', detail:'Docklands新興水岸區域', rent:950, listing:'$1,120,000–$1,218,000', desc:'2房2浴1車 · 88–108m²' },
+    ]
+  }
+};
+
+const CITY_ORDER = ['perth','adelaide','brisbane','melbourne'];
+const LR = {70:.0629, 60:.0619};
+const STRATA = 3232; // default mid-rise
+const fmt = n => '$' + Math.round(Math.abs(n)).toLocaleString();
+const fmtP = (n,d=2) => (n*100).toFixed(d)+'%';
+const zoneCls = {cbd:'z-cbd',inner:'z-inner',mid:'z-mid',outer:'z-outer'};
+
+let selCity = 'perth', selBandIdx = 2, selLvr = 70;
+
+// FIRB fee calculation (official 2025-26 schedule, new dwellings)
+function firbFee(price) {
+  if (price < 75000)  return 4500;
+  if (price <= 1000000) return 15100;
+  if (price <= 2000000) return 30300;
+  if (price <= 3000000) return 60600;
+  if (price <= 4000000) return 90900;
+  if (price <= 5000000) return 121200;
+  return 151500; // $5m+, simplified
+}
+
+// ── STAMP DUTY (uses selected band price) ──
+function getStampData() {
+  const cities = ['perth','brisbane','adelaide','melbourne','sydney_ref'];
+  const SYDNEY = {
+    name:'雪梨', st:'NSW',
+    sd: p => { if(p<=17000)return Math.max(20,p*.0125); if(p<=37000)return 212+(p-17000)*.015; if(p<=99000)return 512+(p-37000)*.0175; if(p<=372000)return 1597+(p-99000)*.035; if(p<=1240000)return 11152+(p-372000)*.045; return 50212+(p-1240000)*.055 },
+    fs:.09, lts:.05, ltt:1075000, ltn:'5%附加（土地>$107.5萬）'
+  };
+  const price = CITY_DATA[selCity]?.bands[selBandIdx]?.price || 900000;
+  const all = [...CITY_ORDER.map(c=>CITY_DATA[c]), SYDNEY];
+  return all.map(d => {
+    const base = d.sd(price);
+    const sur = price * d.fs;
+    return {name:d.name,st:d.st,base,sur,total:base+sur+firbFee(price),lts:d.lts,ltn:d.ltn,fs:d.fs,isSel:d.name===CITY_DATA[selCity]?.name};
+  }).sort((a,b)=>a.total-b.total);
+}
+
+function renderStamp() {
+  const rows = getStampData();
+  document.getElementById('stamp-tbody').innerHTML = rows.map((r,i) => {
+    const isLow = i===0;
+    return `<tr class="${isLow?'bestrow':''}" style="${r.isSel?'outline:2px solid var(--teal);outline-offset:-2px':''}">
+      <td>${r.name}（${r.st}）${isLow?'<span class="badge bt" style="margin-left:6px">最低</span>':''}${r.isSel?'<span class="badge bs" style="margin-left:6px">已選</span>':''}</td>
+      <td class="vm">${fmt(r.base)}</td>
+      <td>${(r.fs*100).toFixed(0)}%</td>
+      <td class="vr">${fmt(r.sur)}</td>
+      <td class="vm" id="stamp-firb-val">$15,100</td>
+      <td class="${isLow?'vg':'vt'}" style="font-size:15px;font-weight:700">${fmt(r.total)}</td>
+      <td class="${r.lts===0?'vg':'va'}">${r.lts===0?'✅ 0%':r.lts*100+'%'}</td>
+      <td class="vm" style="font-size:11px">${r.ltn}</td>
+    </tr>`;
+  }).join('');
+}
+
+// ── CITY COMPARISON ──
+function renderCities() {
+  const price = CITY_DATA[selCity]?.bands[selBandIdx]?.price || 900000;
+  const allCities = ['perth','brisbane','adelaide','melbourne'];
+  const res = allCities.map(c => {
+    const d = CITY_DATA[c];
+    const loan = price * (selLvr/100);
+    const annRent = 850 * 52 * (1-d.vac);
+    const interest = loan * (LR[selLvr]||.0629);
+    const mgmt = annRent*.08;
+    const maint = price*.005;
+    const lt = (() => { if(!d.lts)return 0; const lv=price*.4; if(lv<=d.ltt)return 0; return(lv-d.ltt)*d.lts; })();
+    const cf = annRent-interest-mgmt-d.strata-maint-lt;
+    const nY = (annRent-mgmt-d.strata-maint-lt)/price;
+    const base = d.sd(price); const sur=price*d.fs; const firb=firbFee(price); const entry=base+sur+firb;
+    return {c,nY,cf,entry,g:d.g,lt:d.lts};
+  });
+  const bestNY = Math.max(...res.map(r=>r.nY));
+  document.getElementById('city-grid').innerHTML = res.map(r => {
+    const d = CITY_DATA[r.c];
+    const isSel = r.c===selCity;
+    return `<div class="cc ${isSel?'sel':''} ${r.nY===bestNY&&!isSel?'best':''}">
+      <div class="cc-name">${d.name}${isSel?' ⭐':''}</div>
+      <div class="cc-state">${d.st}</div>
+      <div class="cc-row"><span class="cc-rl">總入場成本</span><span class="cc-rv vt">${fmt(r.entry)}</span></div>
+      <div class="cc-row"><span class="cc-rl">淨回報率</span><span class="cc-rv" style="color:${r.nY>.025?'var(--sage)':'var(--amber)'}">${fmtP(r.nY)}</span></div>
+      <div class="cc-row"><span class="cc-rl">年度現金流</span><span class="cc-rv" style="color:${r.cf>=0?'var(--sage)':'var(--amber)'}">${r.cf>=0?'+':''}${fmt(r.cf)}</span></div>
+      <div class="cc-row"><span class="cc-rl">年增值率</span><span class="cc-rv vg">+${fmtP(r.g,1)}</span></div>
+      <div class="cc-row"><span class="cc-rl">土地稅附加</span><span class="cc-rv" style="color:${r.lt===0?'var(--sage)':'var(--amber)'}">${r.lt===0?'0%':r.lt*100+'%'}</span></div>
+    </div>`;
+  }).join('');
+}
+
+// ── PRICE BANDS ──
+function renderBands() {
+  const d = CITY_DATA[selCity];
+  document.getElementById('price-bands').innerHTML = d.bands.map((b,i) => {
+    const isActive = i === selBandIdx;
+    return `<div class="pb-row ${isActive?'active':''}" onclick="selectBand(${i})">
+      <div class="pb-header">
+        <div class="pb-price">${b.label}</div>
+        <span class="${zoneCls[b.zone]||'z-outer'}">${b.zoneLabel}</span>
+      </div>
+      ${isActive ? `<div class="pb-body">
+        <div class="pb-suburb">${b.suburb}</div>
+        <div class="pb-detail">${b.detail}</div>
+        <div class="apt-highlight">
+          <div class="apt-label">✦ 新建2房公寓 New 2BR Apartment</div>
+          <div class="apt-price">${fmt(b.price)}</div>
+          <div class="apt-desc">${b.listing} · ${b.desc}</div>
+          <div class="apt-rent">預估週租金 ${fmt(b.rent)}/週 · 市場參考價</div>
+        </div>
+      </div>` : ''}
+    </div>`;
+  }).join('');
+}
+
+// ── CALC ──
+function calcAndRender() {
+  const d = CITY_DATA[selCity];
+  const b = d.bands[selBandIdx];
+  if(!b) return;
+  const price = b.price;
+  const weeklyRent = b.rent;
+  const loan = price * (selLvr/100);
+  const rate = LR[selLvr]||.0629;
+  const annRent = weeklyRent * 52 * (1-d.vac);
+  const interest = loan * rate;
+  const monthly = loan*(rate/12)/(1-Math.pow(1+rate/12,-360));
+  const mgmt = annRent*.08;
+  const maint = price*.005;
+  const strata = d.strata;
+  const lt = (() => { if(!d.lts)return 0; const lv=price*.4; if(lv<=d.ltt)return 0; return(lv-d.ltt)*d.lts; })();
+  const cf = annRent-interest-mgmt-strata-maint-lt;
+  const gY = annRent/price;
+  const nY = (annRent-mgmt-strata-maint-lt)/price;
+  const base = d.sd(price); const sur=price*d.fs; const firb=firbFee(price); const entry=base+sur+firb;
+
+  // Selected prop info
+  document.getElementById('selected-prop').style.display='block';
+  document.getElementById('sp-price').textContent = fmt(price);
+  document.getElementById('sp-zone-badge').innerHTML = `<span class="${zoneCls[b.zone]||'z-outer'}">${b.zoneLabel} · ${b.suburb}</span>`;
+  document.getElementById('sp-desc').textContent = b.listing + ' · ' + b.desc;
+  document.getElementById('sp-rent').textContent = `預估週租金 ${fmt(b.rent)}/週`;
+  document.getElementById('calc-subtitle').textContent = `${d.name}（${d.st}） · ${b.label} · ${b.zoneLabel} · 70% LVR`;
+
+  // Metrics
+  document.getElementById('r-gy').textContent = fmtP(gY);
+  document.getElementById('r-ny').textContent = fmtP(nY);
+  const gap = cf<0 ? cf*(1-0.325) : cf;
+  const gapEl = document.getElementById('r-monthly-gap');
+  gapEl.textContent = (gap>=0?'+':'−')+fmt(gap/12)+'/月';
+  gapEl.style.color = gap>=0?'var(--sage)':'var(--amber)';
+
+  // Cost breakdown
+  document.getElementById('r-rent').textContent = fmt(annRent);
+  document.getElementById('r-interest').textContent = '-'+fmt(interest);
+  document.getElementById('r-mgmt').textContent = '-'+fmt(mgmt);
+  document.getElementById('r-strata').textContent = '-'+fmt(strata);
+  document.getElementById('r-maint').textContent = '-'+fmt(maint);
+  const ltEl = document.getElementById('r-lt');
+  if(lt>0){ltEl.textContent='-'+fmt(lt);ltEl.className='bkval va';}
+  else{ltEl.textContent='$0（免附加稅）';ltEl.className='bkval vg';}
+  const cfEl = document.getElementById('r-cf');
+  cfEl.textContent = (cf>=0?'+':'')+fmt(cf)+(cf<0?' （負扣稅）':'');
+  cfEl.style.color = cf>=0?'var(--sage)':'var(--amber)';
+
+  const nn = document.getElementById('neg-note');
+  if(cf<0){nn.style.display='block';const sv=Math.abs(cf)*.325;document.getElementById('r-neg').textContent=fmt(Math.abs(cf));document.getElementById('r-ts').textContent=fmt(sv);}
+  else nn.style.display='none';
+
+  // Entry
+  document.getElementById('r-sd').textContent = fmt(base);
+  document.getElementById('r-sur').textContent = fmt(sur);
+  document.getElementById('r-firb').textContent = fmt(firb);
+  document.getElementById('r-entry').textContent = fmt(entry);
+  const firbEl = document.getElementById('stamp-firb-val');
+  if(firbEl) firbEl.textContent = fmt(firb);
+
+  // 15yr projection
+  let p=price, wk=weeklyRent, loanBal=loan;
+  const mr=rate/12; const mp=loanBal*mr/(1-Math.pow(1+mr,-360));
+  let cumCF=0, bev=-1;
+  const milestones={5:null,10:null,15:null};
+  for(let yr=1;yr<=15;yr++){
+    const ar=wk*52*(1-d.vac);
+    let yi=0,bal=loanBal;
+    for(let m=0;m<12;m++){const ip=bal*mr;yi+=ip;bal-=(mp-ip);}
+    loanBal=Math.max(0,bal);
+    const ltYr=(() => { if(!d.lts)return 0; const lv=p*.4; if(lv<=d.ltt)return 0; return(lv-d.ltt)*d.lts; })();
+    const ycf=ar-yi-ar*.08-price*.005-strata-ltYr;
+    cumCF+=ycf;
+    if(ycf>=0&&bev<0) bev=yr;
+    if(milestones[yr]!==undefined) milestones[yr]={cf:ycf, gain:p-price};
+    wk=Math.min(wk*(1+(yr<=3?.05:yr<=7?.03:.025)),b.rent*1.1);
+    p*=(1+d.pg(yr));
+  }
+  [5,10,15].forEach(yr=>{
+    const m=milestones[yr];
+    const cfEl2=document.getElementById(`p${yr}-cf`);
+    cfEl2.textContent=(m.cf>=0?'+':'')+fmt(m.cf);
+    cfEl2.style.color=m.cf>=0?'var(--sage)':'var(--amber)';
+    document.getElementById(`p${yr}-gain`).textContent='+'+fmt(m.gain);
+  });
+  const bvNote=document.getElementById('bev-note');
+  if(bev>0){bvNote.style.display='block';bvNote.className='note note-t';bvNote.innerHTML=`✅ <strong>現金流轉正：第${bev}年</strong> — 從第${bev}年起租金開始超過所有持有成本。`;}
+  else{bvNote.style.display='block';bvNote.className='note note-a';bvNote.innerHTML='⚠️ <strong>15年內現金流未轉正</strong>';}
+}
+
+function updateAll() {
+  renderBands();
+  calcAndRender();
+  renderStamp();
+  renderCities();
+}
+
+function selectBand(idx) {
+  selBandIdx = idx;
+  updateAll();
+}
+
+// City tabs - use onclick via function for reliability
+function selectCity(city) {
+  selCity = city;
+  selBandIdx = 0;
+  document.querySelectorAll('#city-tabs .ctab').forEach(b => b.classList.remove('on'));
+  document.querySelector('#city-tabs .ctab[data-city="'+city+'"]').classList.add('on');
+  updateAll();
+}
+
+// LVR toggle
+function selectLvr(lvr) {
+  selLvr = lvr;
+  document.querySelectorAll('#lvr-toggle .tb').forEach(b => b.classList.remove('on'));
+  document.querySelector('#lvr-toggle .tb[data-lvr="'+lvr+'"]').classList.add('on');
+  updateAll();
+}
+
+document.querySelectorAll('#city-tabs .ctab').forEach(btn => {
+  btn.onclick = function(){ selectCity(this.dataset.city); };
+});
+document.querySelectorAll('#lvr-toggle .tb').forEach(btn => {
+  btn.onclick = function(){ selectLvr(parseInt(this.dataset.lvr)); };
+});
+
+// Tabs
+function tab(name,btn){
+  document.querySelectorAll('.tc').forEach(e=>e.classList.remove('on'));
+  document.querySelectorAll('.tabx').forEach(e=>e.classList.remove('on'));
+  document.getElementById('t-'+name).classList.add('on');
+  btn.classList.add('on');
+}
+
+// Nav scroll
+window.addEventListener('scroll',()=>{
+  const ids=['summary','policy','integrated','costs','market','loan','recommendation','apt-data','pitfalls'];
+  let cur='';
+  ids.forEach(id=>{const el=document.getElementById(id);if(el&&window.scrollY>=el.offsetTop-80)cur=id;});
+  document.querySelectorAll('.nav a').forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+cur));
+});
+
+// Tooltip toggle
+function toggleTip(icon) {
+  const isOpen = icon.classList.contains('open');
+  document.querySelectorAll('.tip-icon.open').forEach(el => el.classList.remove('open'));
+  if(!isOpen) icon.classList.add('open');
+}
+// Close tooltips on outside click - use mousedown to avoid interfering with click events
+document.addEventListener('mousedown', e => {
+  if(!e.target.closest('.tip-wrap')) {
+    document.querySelectorAll('.tip-icon.open').forEach(el => el.classList.remove('open'));
+  }
+}, true);
+
+// Init
+updateAll();
+</script>
+</body>
+</html>
